@@ -5,7 +5,7 @@
 
 ### [Android Studio遇到的那些坑](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E9%81%87%E5%88%B0%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9D%91.md)
 
-### [Android Studio常用设置和快捷键](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/%5B%E8%80%81%E5%8D%A2%E7%8B%AC%E5%AE%B6%E6%95%B4%E7%90%86%5D%E5%AE%89%E5%8D%93studio%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%BF%AB%E6%8D%B7%E9%94%AE.txt)
+### [Android Studio常用设置和快捷键](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
 
 ### [Android Studio常用模板用法和自定义模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E5%B8%B8%E7%94%A8%E6%A8%A1%E6%9D%BF%E7%94%A8%E6%B3%95%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF.md)
 

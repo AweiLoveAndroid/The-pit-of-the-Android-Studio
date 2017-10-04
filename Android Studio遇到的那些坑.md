@@ -250,9 +250,12 @@ Re-download dependencies and sync project (requires network)
 
 ### 18. app:transformClassesWithJarMergingForDebug
 
-> 重复依赖导致的.
-> 
+ ![Android遇到的问题18对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9818%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
+
+> 原因：重复依赖导致的.
+
 > 解决办法：
+
     找到报错的那个提示，看上面报错的是哪个类，双击shift搜索一下，看这个报错的类在哪个依赖库里面用到了。
     在AS中，选择以project显示项目，找到最下面的External Libraries，然后继续找，找到相对应的类库。
     点开之后发现了一个pom.xml，这里面就是关于这个jar的一些配置文件，往下找，发现了一个依赖库的引用，
@@ -261,11 +264,15 @@ Re-download dependencies and sync project (requires network)
 
 ### 19. processdebugresources
 
+ ![Android遇到的问题19对应的图片]()
+
 >原因：build.gradle的兼容包和compileSdkVersion配置不对引起的，关于这个匹配，请查看[Android Studio和gradle版本对照.txt](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Android%20Studio%E5%92%8Cgradle%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7.txt)
 
 >解决办法：让兼容包和compileSdkVersion匹配就OK了
 
 ### 20. Android Studio配置androidannotations出现 Error:Execution failed for task ':app:compileDebugJavaWithJavac'
+
+ ![Android遇到的问题20对应的图片]()
 
 >原因： androidannotations配置环境对SDKtools, Build Tools, Platform Tools 以及 SDK Platform有要求，不匹配的话就会报错
 

@@ -197,7 +197,7 @@ ________________
 
 		我自定义了几个常用功能，放在lzw组下面，如图所示：
 
-![我的自定义模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B4%BB%E5%8A%A8%E6%A8%A1%E6%9D%BF.png?raw=true)
+![我的自定义模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E6%88%91%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B4%BB%E5%8A%A8%E6%A8%A1%E6%9D%BF.png?raw=true)
 
     han: 自动生成一个类继承Handler
     swi  自定义switch/case选择语句
@@ -219,7 +219,7 @@ ________________
 
 ### 具体如下图所示：
 
-![我的自定义模板步骤](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%AD%A5%E9%AA%A4.png?raw=true)
+![我的自定义模板步骤](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E6%88%91%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%AD%A5%E9%AA%A4.png?raw=true)
 
 
 
