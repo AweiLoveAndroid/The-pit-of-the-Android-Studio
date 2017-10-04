@@ -1,0 +1,8 @@
+====>
+
+校验和格式化json的网站
+http://jsonlint.qqe2.com/
+
+jsonview这个chrome插件，可以打开json文件的同时格式化json文件
+
+====>

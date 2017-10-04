@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+ <body>
+ <br><h1 align="center" style="color:red;">Unknown host 'downloads.gradle.org'问题的解决</h1>
+&nbsp;&nbsp;使用android studio的gradle新建项目时候出现
+<br>
+&nbsp;&nbsp;Error:Unknown host 'downloads.gradle.org'.Enable Gradle 'offline mode' and sync project
+<br>
+&nbsp;&nbsp;Learn about configuring HTTP proxies in Gradle
+<br>
+&nbsp;&nbsp;或者出现 
+&nbsp;&nbsp;Error:No cached version listing for com.android.tools.build:gradle:0.12.+ av 
+<br>
+<br>
+&nbsp;&nbsp;<img src="pics1.png" alt="" style="border:none; max-width:100%"><br>
+<br>
+&nbsp;&nbsp;解决方法如下： 
+<br>
+<br>
+&nbsp;&nbsp;<img src="pics2.png" alt="" style="border:none; max-width:100%"><br>
+<br>
+<br>
+<br>
+&nbsp;&nbsp;<img src="pics3.png" alt="" style="border:none; max-width:100%"><br>
+<br>
+<br>
+&nbsp;&nbsp;<img src="pics4.png" alt="" style="border:none; max-width:100%"><br>
+<br>
+<br>
+&nbsp;&nbsp;<img src="pics5.png" alt="" style="border:none; max-width:100%"><br>
+<br>
+<br>
+&nbsp;&nbsp;<img src="pics6.png" alt="" style="border:none; max-width:100%"><br>
+<br>
+<br>
+&nbsp;&nbsp;不是第一次的话以后就可以点这里的clean了。
+<br>
+<br>
+&nbsp;&nbsp;<img src="pics7.png" alt="" style="border:none; max-width:100%"><br>
+<br>
+<br>
+&nbsp;&nbsp;或者更直接点，打开cmd，找到你的项目根目录，输入gradle clean（前提是下载gradle，并且设置环境变量）
+<br>
+<br>
+<br>如果还是下载不了的话，请看下文介绍：
+
+
+<br><br><br><br>
+<h3 align="center" style="color:blue;">具体的android studio 配置</h3>
+<br>&nbsp;&nbsp;安装步骤：
+<br>&nbsp;&nbsp;1.先下载androidstudio，下载地址：http://developer.android.com/sdk/installing/studio.html
+下载完直接安装，安装完打开它，然后会出现下载gradle-1.8-bin.zip，这个一般都会卡死，在天朝是这个样子的，不过不要紧，把androidstudio关掉。 
+<br>
+&nbsp;&nbsp;2.下载gradle-1.8-bin.zip，下载地址：http://www.gradle.org/downloads，下载完之后，找到目录：
+C:\Users\用户名\.gradle\wrapper\dists\gradle-1.8-bin\vruqmccc8532n7gr46qavsii8\
+把下载的gradle-1.8-bin.zip放到该目录下，并且把gradle-1.8-bin.zip解压到该目录(解压得到的文件为gradle-1.8)。
+<br>
+&nbsp;&nbsp;3.最关键的来了，把该目录下的gradle-1.8-bin.zip.part文件删除，然后复制gradle-1.8-bin.zip.lck，把它改为gradle-1.8-bin.zip.ok 
+<br>
+&nbsp;&nbsp;4.ok，到此你就可以运行androidstudio开发了。
+<br>
+&nbsp;&nbsp;另附：
+<br>
+Gradle下载：http://services.gradle.org/distributions/
+ </body>
+</html>
