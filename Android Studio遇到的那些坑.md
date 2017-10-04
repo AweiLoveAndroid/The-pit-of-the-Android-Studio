@@ -93,7 +93,7 @@
 ###  9. Unknown host 'downloads.gradle.org' 这个问题的解决:
 使用android studio的gradle新建项目时候出现:Error:Unknown host 'downloads.gradle.org'.Enable Gradle 'offline mode' and sync project.Learn about configuring HTTP proxies in Gradle
 
->解决办法:请查看本文件夹里面的 **[Unknown host 'downloads.gradle.org'问题的解决.html](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Unknown%20host%20'downloads.gradle.org'%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3.html)**
+>解决办法:请查看本文件夹里面的 **[Unknown host 'downloads.gradle.org'问题的解决.html](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Unknown%20host%20'downloads.gradle.org'%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3.html)**
 
 
 ### 10. 关于混淆出现的问题：
@@ -200,27 +200,32 @@ Gradle's dependency cache may be corrupt (this sometimes occurs after a network 
 Re-download dependencies and sync project (requires network)
 > 
 Re-download dependencies and sync project (requires network)
-![图片链接](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9815%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%871.png?raw=true)
+
+![Android遇到的问题15对应的图片1](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9815%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%871.png?raw=true)
+
 这个错误提示意思是：Gradle's dependency cache may be corrupt：（Gradle的依赖缓存可能是损坏的。）
 
-> 原因分析：我们要导入别人写好的工程时，一般不需要更改什么，as智能判断会提示我们是否需要对build gradle setting之类的文件进行修改。针对gradle个版本工具来说，如果不选择更新直接原来的Gradle Version中的Gradle工具，再加上.gradle库中没用该版本时，as会创建这样的库，有时候这样的库会下载不完整，导致上面的问题。
+* 原因分析：我们要导入别人写好的工程时，一般不需要更改什么，as智能判断会提示我们是否需要对build gradle setting之类的文件进行修改。针对gradle个版本工具来说，如果不选择更新直接原来的Gradle Version中的Gradle工具，再加上.gradle库中没用该版本时，as会创建这样的库，有时候这样的库会下载不完整，导致上面的问题。
 
-    解决办法:
+* 解决办法:
 
-    
-    1、下载 gradle
+        1.下载 gradle
  
     下载地址很简单，以 下载gradle-3.5-all.zip为例子。不要去网上找这样那样的网站下载gradle工具了。浏览器输入以下链接快速下载：
     services.gradle.org/distributions/gradle-3.5-all.zip
     
-    2.复制替换
+        2.复制替换
 
     下载完成后替换 C:\Users\Administrator\.gradle\wrapper\dists\gradle-3.3-all\
     exhrs6ca08n232b14ue48lbye中对应的gradle-3.5-all.zip文件。
     正确解压后的的文件如下图所示：
- ![图片链接](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9815%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%872.png?raw=true)
-    3. 重新打开项目，对工程中做一些配置如下，重新编译一下，就没问题了:
- ![图片链接](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9815%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%873.png?raw=true)
+
+ ![Android遇到的问题15对应的图片2](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9815%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%872.png?raw=true)
+
+
+        3.重新打开项目，对工程中做一些配置如下，重新编译一下，就没问题了:
+
+ ![Android遇到的问题15对应的图片3](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9815%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%873.png?raw=true)
 
 
 ### 16. Android studio 源码无法关联，提示Souces for android api 25 platform not found:
@@ -235,10 +240,33 @@ Re-download dependencies and sync project (requires network)
 
     修改后的部分配置文件如下：注意红色方框部分，找到对应的编译版本，再添加对应的源码位置
 
- ![图片链接](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9816%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
+ ![Android遇到的问题16对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9816%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
 
 ### 17. com.android.ddmlib.SyncException: No space left on device
 
     解决方法：
 
     把模拟器里没用的应用或者demo卸载卸载。如果还不行，就重启或者重新创建一个模拟器
+
+### 18. app:transformClassesWithJarMergingForDebug
+
+> 重复依赖导致的.
+> 
+> 解决办法：
+    找到报错的那个提示，看上面报错的是哪个类，双击shift搜索一下，看这个报错的类在哪个依赖库里面用到了。
+    在AS中，选择以project显示项目，找到最下面的External Libraries，然后继续找，找到相对应的类库。
+    点开之后发现了一个pom.xml，这里面就是关于这个jar的一些配置文件，往下找，发现了一个依赖库的引用，
+    复制里面groupId，到你的app的build.gradle里，找到那个依赖，添加{exclude group: 'XXX'} XXX换成刚才复制的groupId，这样就
+    把这个groudId的引用去除掉。
+
+### 19. processdebugresources
+
+>原因：build.gradle的兼容包和compileSdkVersion配置不对引起的，关于这个匹配，请查看[Android Studio和gradle版本对照.txt](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Android%20Studio%E5%92%8Cgradle%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7.txt)
+
+>解决办法：让兼容包和compileSdkVersion匹配就OK了
+
+### 20. Android Studio配置androidannotations出现 Error:Execution failed for task ':app:compileDebugJavaWithJavac'
+
+>原因： androidannotations配置环境对SDKtools, Build Tools, Platform Tools 以及 SDK Platform有要求，不匹配的话就会报错
+
+> 解决办法：打开SDK Manager，更新SDKtools, Build Tools, Platform Tools 以及 SDK Platform到最新版本

@@ -18,7 +18,7 @@ ________________
 > ##### 2.　进入 Android Studio 安装目录，依次进入 plugins --> android --> lib --> templates --> gradle-projects --> NewAndroidModule，然后用编辑器打开 recipe.xml.ftl文件，并加入以下配置,如下图红色框框所示
 
 
-![修改NewAndroidModule自带的模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/%E4%BF%AE%E6%94%B9NewAndroidModule%E8%87%AA%E5%B8%A6%E7%9A%84%E6%A8%A1%E6%9D%BF.png?raw=true)
+![修改NewAndroidModule自带的模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E4%BF%AE%E6%94%B9NewAndroidModule%E8%87%AA%E5%B8%A6%E7%9A%84%E6%A8%A1%E6%9D%BF.png?raw=true)
 
 
 
@@ -34,7 +34,7 @@ ________________
 
 > ##### 3.　新建一个project看看效果如何：（图片的demin.xml之前打错了，以后有时间把图片换掉，更新一下）
 
-![效果图](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.png?raw=true)
+![效果图](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E6%95%88%E6%9E%9C%E5%9B%BE.png?raw=true)
 
 
 
@@ -195,9 +195,9 @@ ________________
 
 #### （二）自定义活动模板
 
-		我自定义了几个常用功能，放在custom组下面，如图所示：
+		我自定义了几个常用功能，放在lzw组下面，如图所示：
 
-![自定义活动模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B4%BB%E5%8A%A8%E6%A8%A1%E6%9D%BF.png?raw=true)
+![我的自定义模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B4%BB%E5%8A%A8%E6%A8%A1%E6%9D%BF.png?raw=true)
 
     han: 自动生成一个类继承Handler
     swi  自定义switch/case选择语句
@@ -219,7 +219,7 @@ ________________
 
 ### 具体如下图所示：
 
-![自定义活动模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%AD%A5%E9%AA%A4.png?raw=true)
+![我的自定义模板步骤](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%AD%A5%E9%AA%A4.png?raw=true)
 
 
 
@@ -244,14 +244,14 @@ ________________
 
 这样便可在每次新建类的时候自动加上该头注释，如下图所示。
 
-![自定义类注释模板方式1](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E6%96%B9%E5%BC%8F1.png?raw=true)
+![自定义类注释模板方式1](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E6%96%B9%E5%BC%8F1.png?raw=true)
 
 
 
 > **（2）第二种方式，在Settings → Editor → Live Templates中配置，如下图所示：**
 > 
 
-![自定义类注释模板方式2](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E6%96%B9%E5%BC%8F2.png?raw=true)
+![自定义类注释模板方式2](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF%E6%96%B9%E5%BC%8F2.png?raw=true)
 
 关于这里的$DATE$ ，点击右边的Edit variables，属性配置成date()
 
