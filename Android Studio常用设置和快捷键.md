@@ -151,31 +151,31 @@ Warning|#FFBB33
 	
     方法2:选择 File --> Other Settings --> Default Project Structure,设置 JDK 或者 Android SDK 目录即可
 
-##### 8)插件安装
+##### 7)插件安装
 
     File --> Settings --> Plugins --> Browse repositories…  搜索插件安装
 
-##### 7) 每次打开studio 会有个提示，查看和关闭的方式：
+##### 8) 每次打开studio 会有个提示，查看和关闭的方式：
 
     点击菜单栏的 Help --> Tips of the Day  --> 可以查看提示窗，点击上面的Show tips on Startup 对勾去掉，以后再打开就不会
     出现这个提示了。如果要查看提示，就点击菜单栏的 Help --> Tips of the Day
 
-##### 8) 禁止代码折叠：
+##### 9) 禁止代码折叠：
 
-    File --> Settings --> Editor --> Code Folding，勾选
-    √ One-line methods
-    √ "Closures"(anonymous classes implementing one method,before Java 8)
-    √ Generic constructor and method parameters
+    File --> Settings --> Editor --> Code Folding，取消以下3个勾选:
+      One-line methods
+      "Closures"(anonymous classes implementing one method,before Java 8)
+      Generic constructor and method parameters
 
-##### 9)使用炫酷的黑色界面
+##### 10)使用炫酷的黑色界面
 
     Settings --> Appearance --> Theme ，选择 Darcula 主题
  
-##### 10)显示空格(这样就能看出缩进是 tab 缩进还是空格缩进,建议使用tab缩进)
+##### 11)显示空格(这样就能看出缩进是 tab 缩进还是空格缩进,建议使用tab缩进)
 
     File --> Settings --> Editor --> General --> Appearance，勾选 Show whitespaces
  
-##### 11)修改注释位置，禁用“语句堆一行”：
+##### 12)修改注释位置，禁用“语句堆一行”：
 
     File --> Settings --> Editor --> Code Style --> Java，点击右边的Wrapping and Braces，把下面这两个对勾去掉：
     □ Comment at frist column：禁用表示根据缩进来注释，否则注释位于句首。
