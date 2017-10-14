@@ -2,11 +2,11 @@
 
 在Android Studio中，Google提供了很多代码分析工具，这些工具都集中在Android Studio的Analyze菜单中
 
-[Analyze菜单.png]()
+[Analyze菜单.png](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Analyze%E8%8F%9C%E5%8D%95.png)
 
 #### （1）Inspect Code功能
 
-[Analyze中的Inspect Code使用.png]()
+[Analyze中的Inspect Code使用.png](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Analyze%E4%B8%AD%E7%9A%84Inspect%20Code%E4%BD%BF%E7%94%A8.png)
 
 ###### Inspect Code功能，可以让IDE分析整个工程，不仅提供了Lint的检测功能，还提供了一些其他的代码静态分析结果。它会给出所有在这个项目中不规范的编码（比如：项目中存在hardcode)、多余的资源、拼写问题、可能的bug、或者其它的一些问题，同时给出了大致的修改意见，点击对应的问题后后边会给出问题的具体位置供我们修改。这个工具可以让项目具有规范性的开发。
 
