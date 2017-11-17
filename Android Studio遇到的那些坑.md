@@ -277,3 +277,14 @@ Re-download dependencies and sync project (requires network)
 >原因： androidannotations配置环境对SDKtools, Build Tools, Platform Tools 以及 SDK Platform有要求，不匹配的话就会报错
 
 > 解决办法：打开SDK Manager，更新SDKtools, Build Tools, Platform Tools 以及 SDK Platform到最新版本
+
+### 21. Error:com.android.builder.internal.aapt.AaptException: Failed to crunch
+
+ ![Android遇到的问题21对应的图片]()
+
+> 原因： 项目路径太长，导致有的资源文件整个路径长度超过了240个字符。这是Android Studio的一个坑。
+
+> 解决办法：
+
+    （1）重命名项目名，重新运行一下。
+    （2）如果以上方法不行，就缩短路径深度，减少路径层级，每一级路径名字尽可能的缩短。
