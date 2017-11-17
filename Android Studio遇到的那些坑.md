@@ -280,7 +280,7 @@ Re-download dependencies and sync project (requires network)
 
 ### 21. Error:com.android.builder.internal.aapt.AaptException: Failed to crunch
 
- ![Android遇到的问题21对应的图片]()
+ ![Android遇到的问题21对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9821%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
 
 > 原因： 项目路径太长，导致有的资源文件整个路径长度超过了240个字符。这是Android Studio的一个坑。
 
