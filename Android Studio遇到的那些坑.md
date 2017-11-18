@@ -288,3 +288,39 @@ Re-download dependencies and sync project (requires network)
 
     （1）重命名项目名，重新运行一下。
     （2）如果以上方法不行，就缩短路径深度，减少路径层级，每一级路径名字尽可能的缩短。
+
+### 22. Android Studio编辑时发生的错误 `Error:warning: Ignoring InnerClasses attribute for an anonymous inner class`
+
+ ![Android遇到的问题21对应的图片]()
+
+> 原因：有3种情况可以导致这种错误发生： 
+
+* (1)导了重复jar包，或者导入了不同版本的同名jar包。
+
+* (2)AndroidStudio打签名包时android.keystore 的密码输入错了
+
+* (3)有可能是Dex的方法数超过上限导致的。
+
+> 解决办法：
+
+* (1)把重复的jar包删除掉，Rebuild Project，就OK了，如果，还有其他问题，那证明你的app下的build.gradle依赖配置就有问题。
+
+* (2)重新打包一个正式包，重新输入签名账号密码。
+
+* (3)在项目的build.gradle文件中添加multiDexEnabled true   搞定。
+
+**示例：**
+
+之前是在win7电脑的工程运行在mac电脑，打开就出了这样的错误。解决这个问题的方式，给大家分析一下：
+
+    1.第一考虑是不是可以直接忽略第三方的属性的错误警告.找到项目下对应的proguard-rules.pro文件,在proguard-rules.pro文件中添加如下代码
+    
+    -keepattributes EnclosingMethod
+
+    2.查看第三方jar有没有重复利用的，发现并没有。继续下一步。
+
+    3.看看是不是Dex越界引起的问题。在项目的build.gradle文件中添加以下代码:
+    
+    multiDexEnabled true
+
+重新编译之后，项目成功移植了。
