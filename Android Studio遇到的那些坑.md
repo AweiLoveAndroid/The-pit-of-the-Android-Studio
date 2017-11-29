@@ -348,10 +348,10 @@ To override this check from the command line please set the ANDROID_DAILY_OVERRI
 
 * （4）修改对应Project的build.gradle中的com.android.tools.build:gradle:版本号为提示版本(如修改classpath 'com.android.tools.build:gradle:2.3.0-beta1'为classpath 'com.android.tools.build:gradle:2.3.0-beta3')；
 
-* （5）修改gradle-wrapper.properties中distributionUrl上的版本号与当前Gradle版本号一致(如修改distributionUrl=https\://services.gradle.org/distributions/gradle-3.2-all.zip为distributionUrl=https\://services.gradle.org/distributions/gradle-3.5-all.zip)；
+* （5）修改gradle-wrapper.properties中distributionUrl上的版本号与当前Gradle版本号一致(如修改`distributionUrl=https\://services.gradle.org/distributions/gradle-3.2-all.zip`为`distributionUrl=https\://services.gradle.org/distributions/gradle-3.5-all.zip)`；
 
 * （6）重新同步。
 
 图解如下所示：
 
-[Android遇到的问题23解决办法](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9823%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.png?raw=true)
+![Android遇到的问题23解决办法](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9823%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.png?raw=true)
