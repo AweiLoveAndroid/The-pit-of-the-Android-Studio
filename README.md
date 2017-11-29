@@ -1,6 +1,8 @@
 # The-pit-of-the-Android-Studio
 # 老卢独家整理Android Studio的填坑指南
 
+> ### 说明：这里用的Android Studio版本是 `3.0以前` 的版本，如果想看 `Android Studio3.0` 版本遇到的坑，可以看我的博客 **[Android Studio3.0填坑指南](http://www.jianshu.com/p/b45d68c98828)**
+
 ### 以下是主要内容：
 
 ### 1. [Android Studio遇到的那些坑](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E9%81%87%E5%88%B0%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9D%91.md)
