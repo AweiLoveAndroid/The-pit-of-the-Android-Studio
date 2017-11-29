@@ -354,4 +354,4 @@ To override this check from the command line please set the ANDROID_DAILY_OVERRI
 
 图解如下所示：
 
-[Android遇到的问题23解决办法]()
+[Android遇到的问题23解决办法](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9823%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.png?raw=true)
