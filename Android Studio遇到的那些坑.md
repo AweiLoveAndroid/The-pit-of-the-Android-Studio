@@ -291,7 +291,7 @@ Re-download dependencies and sync project (requires network)
 
 ### 22. Android Studio编辑时发生的错误 `Error:warning: Ignoring InnerClasses attribute for an anonymous inner class`
 
- ![Android遇到的问题21对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9822%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
+ ![Android遇到的问题22对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9822%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
 
 > 原因：有3种情况可以导致这种错误发生： 
 
@@ -313,7 +313,8 @@ Re-download dependencies and sync project (requires network)
 
 之前是在win7电脑的工程运行在mac电脑，打开就出了这样的错误。解决这个问题的方式，给大家分析一下：
 
-    1.第一考虑是不是可以直接忽略第三方的属性的错误警告.找到项目下对应的proguard-rules.pro文件,在proguard-rules.pro文件中添加如下代码
+    1.第一考虑是不是可以直接忽略第三方的属性的错误警告.找到项目下对应的proguard-rules.pro文件,在proguard-rules.pro文件中
+      添加如下代码
     
     -keepattributes EnclosingMethod
 
@@ -324,3 +325,33 @@ Re-download dependencies and sync project (requires network)
     multiDexEnabled true
 
 重新编译之后，项目成功移植了。
+
+### 23. Android Studio版本更新后Gradle版本不匹配问题
+
+> Error:(1, 0) The android gradle plugin version 2.3.0-beta1 is too old, please update to the latest version.
+To override this check from the command line please set the ANDROID_DAILY_OVERRIDE environment variable to "xxxxxxx"
+
+问题截图如下：
+
+ ![Android遇到的问题23对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9823%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
+
+> 解决办法：升级Gradle到合适版本，具体操作如下：
+
+ 【特别说明】Android Studio版本和gradle版本是相匹配的，不是随意匹配的，版本不匹配就会出错。具体的Android Studio和gradle版本对照请看 [Android Studio和gradle版本对照](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Android%20Studio%E5%92%8Cgradle%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7.txt)
+
+* （1）访问 [Gradle官网下载地址](https://services.gradle.org/distributions/) 来下载与之匹配的Gradle版本或者最新的Gradle工具包；
+
+* （2）解压到Android Studio的gradle目录下；
+
+* （3）File->Setting->Build,Exection,Deployment->Gradle->Use local gradle distribution，修改Gradle home为AS安装
+      目录下最新的gradle版本；
+
+* （4）修改对应Project的build.gradle中的com.android.tools.build:gradle:版本号为提示版本(如修改classpath 'com.android.tools.build:gradle:2.3.0-beta1'为classpath 'com.android.tools.build:gradle:2.3.0-beta3')；
+
+* （5）修改gradle-wrapper.properties中distributionUrl上的版本号与当前Gradle版本号一致(如修改distributionUrl=https\://services.gradle.org/distributions/gradle-3.2-all.zip为distributionUrl=https\://services.gradle.org/distributions/gradle-3.5-all.zip)；
+
+* （6）重新同步。
+
+图解如下所示：
+
+[Android遇到的问题23解决办法]()
