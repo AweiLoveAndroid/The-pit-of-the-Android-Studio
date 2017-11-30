@@ -5,7 +5,7 @@
 
 ### 以下是主要内容：
 
-### 1. [Android Studio遇到的那些坑](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E9%81%87%E5%88%B0%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9D%91.md)
+### 1. [Android Studio2.X遇到的那些坑](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E9%81%87%E5%88%B0%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9D%91.md)
 
 ### 2. [Android Studio常用设置和快捷键](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
 
