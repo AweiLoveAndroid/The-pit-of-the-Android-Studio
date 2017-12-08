@@ -32,7 +32,7 @@ ________________
 
 
 
-> ##### 3.　新建一个project看看效果如何：（图片的demin.xml之前打错了，以后有时间把图片换掉，更新一下）
+> ##### 3.　新建一个project看看效果如何：
 
 ![效果图](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E6%95%88%E6%9E%9C%E5%9B%BE.png?raw=true)
 
