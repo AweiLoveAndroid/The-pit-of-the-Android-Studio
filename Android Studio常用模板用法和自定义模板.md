@@ -59,9 +59,9 @@ ________________
     }
 
 ##### 重点要设置的有4个：compileSdkVersion、buildToolsVersion、minSdkVersion、targetSdkVersion，下面讲一下操作方法：
-##### 进入 Android Studio 安装目录，依次进入 plugins --> android --> lib --> templates --> gradle-projects --> NewAndroidModule --> root，然后用编辑器打开build.gradle.ftl，修改配置如下图红色框框所示：
+##### 进入 Android Studio 安装目录，依次进入 plugins --> android --> lib --> templates --> gradle-projects --> NewAndroidModule --> root，然后用编辑器打开build.gradle.ftl，修改配置如下图所示：
 
-![修改NewAndroidModule指定编译版本号]()
+![修改NewAndroidModule指定编译版本号](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E4%BF%AE%E6%94%B9NewAndroidModule%E6%8C%87%E5%AE%9A%E7%BC%96%E8%AF%91%E7%89%88%E6%9C%AC%E5%8F%B7.png?raw=true)
 
 **说明：先把这个文件备份，再去做修改。免费出问题了还可以还原回来。**
 
