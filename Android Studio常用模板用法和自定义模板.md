@@ -7,7 +7,8 @@ ________________
 ### Android Studio 新建一个 **project** 时并没有将 Android 开发中常用的文件目录全部生成，比如默认只生成了一个 drawable文件夹，常用的 drawable-hdpi等文件夹需要我们自己去创建。再比如values目录下的dimens.xml，res目录下的anim文件夹都是没有的，需要我们手动去创建。这样一来，自己创建浪费时间，同时创建的目录名字错了，编译肯定会报错。所以为了效率和安全起见，我们需要把工程目录模板进行修改，达到创建 project 时就可以生成完整的目录结构，不再手动去创建的目的。
 
 
-> ##### 1.　进入 Android Studio 安装目录，依次进入 plugins --> android --> lib --> templates --> gradle-projects --> NewAndroidModule --> root --> res --> values，在values文件夹下创建 dimens.xml 文件夹，写入以下内容:
+> ##### 1.　新建module的时候自动生成dimens.xml.
+##### 操作方式：进入 Android Studio 安装目录，依次进入 plugins --> android --> lib --> templates --> gradle-projects --> NewAndroidModule --> root --> res --> values，在values文件夹下创建 dimens.xml 文件夹，写入以下内容，保存:
 
     <?xml version="1.0" encoding="utf-8"?>
     <resources>
@@ -15,27 +16,59 @@ ________________
     </resources>
 
    
-> ##### 2.　进入 Android Studio 安装目录，依次进入 plugins --> android --> lib --> templates --> gradle-projects --> NewAndroidModule，然后用编辑器打开 recipe.xml.ftl文件，并加入以下配置,如下图红色框框所示
+> ##### 2.这里有3个需要变更的地方。
+> （1）新建module时，自动添加v4依赖，并且指定v4，v7包依赖版本。
+> 
+> （2）新建module时自动生成不同分辨率的drawable文件夹。
+> 
+> （3）指定dimens.xml的路径。
+> 
+##### 操作方式：进入 Android Studio 安装目录，依次进入 plugins --> android --> lib --> templates --> gradle-projects --> NewAndroidModule，然后用编辑器打开 recipe.xml.ftl文件，并加入以下配置,如下图红色框框所示
 
 
 ![修改NewAndroidModule自带的模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E4%BF%AE%E6%94%B9NewAndroidModule%E8%87%AA%E5%B8%A6%E7%9A%84%E6%A8%A1%E6%9D%BF.png?raw=true)
 
 
 
-    说明：
-    （1）dependency 这个意思是配置依赖库的url，默认的只有一个v7包，我这里新增了一个v4包的依赖
-    （2）mkdir 意思是创建目录
-    （3）解释一下以下这段代码的意思：
+说明：
+
+* （1）dependency 这个意思是配置依赖库的url，默认的只有一个v7包，我这里新增了一个v4包的依赖
+
+* （2）v7或者v4后面的25.3.1是对应的版本号，比如你想用24的版本，你可以替换成你的sdk里面对应的版本号（不知道sdk版本号的可以查看 **[Android studio常用设置和快捷键](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%BF%AB%E6%8D%B7%E9%94%AE.md)**）。
+
+* （3）mkdir 意思是创建目录
+
+* （4）解释一下以下这段代码的意思：
+
          <instantiate from="root/res/values/dimens.xml"
                    to="${escapeXmlAttribute(resOut)}/values/dimens.xml" />
+
         意思是把 模板的root/res/values/demins.xml 这个路径里面的dimens.xml拷贝到创建的项目资源目录下面的values/dimens.xml
 
+> ##### 3.新建module的时候想让module的build.gradle里面的编译指定某一个版本。比如我想要的结果是这样的：
+
+    android {
+        compileSdkVersion 25
+        buildToolsVersion "25.0.3"
+        defaultConfig {
+            minSdkVersion 25
+            targetSdkVersion 25
+            ...
+        }
+        ...
+    }
+
+##### 重点要设置的有4个：compileSdkVersion、buildToolsVersion、minSdkVersion、targetSdkVersion，下面讲一下操作方法：
+##### 进入 Android Studio 安装目录，依次进入 plugins --> android --> lib --> templates --> gradle-projects --> NewAndroidModule --> root，然后用编辑器打开build.gradle.ftl，修改配置如下图红色框框所示：
+
+![修改NewAndroidModule指定编译版本号]()
+
+**说明：先把这个文件备份，再去做修改。免费出问题了还可以还原回来。**
 
 
-> ##### 3.　新建一个project看看效果如何：
+> ##### 4.　新建一个project看看效果如何：
 
 ![效果图](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E6%95%88%E6%9E%9C%E5%9B%BE.png?raw=true)
-
 
 
 
