@@ -13,7 +13,7 @@
 
 ### 4. [Android Studio好用的插件](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6.md)
 
-### 5. [Android Studio和gradle版本对照](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Android%20Studio%E5%92%8Cgradle%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7.txt)
+### 5. [Android Studio和gradle版本对照](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Android%20Studio%E5%92%8Cgradle%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7.md)
 
 ### 6. [Android Studio被忽视的小技巧.md](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%20Studio%E8%A2%AB%E5%BF%BD%E8%A7%86%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.md)
 
