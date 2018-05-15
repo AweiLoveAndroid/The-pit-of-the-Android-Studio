@@ -20,7 +20,7 @@ Plugin版本( Android Studio 版本)|Gradle 版本
 > **下图是我根据谷歌的官网找到的资料整理的一张表，这张图可以很直观的看到Android Studio版本、Gradle版本、Build Tools版本三者之间的相互匹配关系，大家可以对照着这个图查看，这张图可以解决大家关于版本匹配遇到的难题。**
 
 Plugin版本( Android Studio 版本)|Gradle 版本 |对应的 Build Tools 版本|对应的 CMake 版本
--|-|-
+-|-|-|-
 1.0.0+|2.2.1-2.3.x|Build Tools 21.1.1+|
 1.0.1+|2.2.1-2.3.x|Build Tools 21.1.1+|
 1.1.0+|2.2.1+|Build Tools 21.1.1+|
