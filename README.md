@@ -23,4 +23,4 @@
 
 ### 9. [Android注解库的使用](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/Android%E6%B3%A8%E8%A7%A3%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 
-### 10. 关于NDK开发遇到的坑总结(正在整理中...)
+### 10. 关于NDK开发遇到的坑总结(正在整理中...),关于ndk的配置可以查看官网介绍：[https://developer.android.google.cn/studio/projects/add-native-code](https://developer.android.google.cn/studio/projects/add-native-code)
