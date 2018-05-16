@@ -21,47 +21,47 @@ Plugin版本( Android Studio 版本)|Gradle 版本
 
 Plugin版本( Android Studio 版本)|Gradle 版本 |对应的 Build Tools 版本|对应的 CMake 版本
 -|-|-|-
-1.0.0+|2.2.1-2.3.x|Build Tools 21.1.1+|
-1.0.1+|2.2.1-2.3.x|Build Tools 21.1.1+|
-1.1.0+|2.2.1+|Build Tools 21.1.1+|
-1.1.1+|2.2.1+|Build Tools 21.1.1+|
-1.1.2+|2.2.1+|Build Tools 21.1.1+|
-1.1.3+|2.2.1+|Build Tools 21.1.1+|
-1.2.0+|2.2.1+|Build Tools 21.1.1+|
-1.3.0+|2.2.1+|Build Tools 21.1.1+|
-1.3.1+|2.2.1+|Build Tools 21.1.1+|
-1.5.0+|2.2.1+|Build Tools 21.1.1+|
-2.0.0+|2.10+|Build Tools 21.1.1+|
-2.1.0+|2.10+|Build Tools 23.0.2+|
-2.1.3+|2.14.1+|Build Tools 23.0.2+|
-2.2.0+|2.14.1+|Build Tools 23.0.2+|
-2.3.0+|3.3+|Build Tools 25.0.0+|
-3.0.0+|4.1+|Build Tools 26.0.2+ |CMake 3.7+
-3.1.0+|4.4+|Build Tools 27.0.3+ |官网没说
+Android Studio 1.0.0+|Gradle 2.2.1-2.3.x|Build Tools 21.1.1+|
+Android Studio 1.0.1+|Gradle 2.2.1-2.3.x|Build Tools 21.1.1+|
+Android Studio 1.1.0+|Gradle 2.2.1+|Build Tools 21.1.1+|
+Android Studio 1.1.1+|Gradle 2.2.1+|Build Tools 21.1.1+|
+Android Studio 1.1.2+|Gradle 2.2.1+|Build Tools 21.1.1+|
+Android Studio 1.1.3+|Gradle 2.2.1+|Build Tools 21.1.1+|
+Android Studio 1.2.0+|Gradle 2.2.1+|Build Tools 21.1.1+|
+Android Studio 1.3.0+|Gradle 2.2.1+|Build Tools 21.1.1+|
+Android Studio 1.3.1+|Gradle 2.2.1+|Build Tools 21.1.1+|
+Android Studio 1.5.0+|Gradle 2.2.1+|Build Tools 21.1.1+|
+Android Studio 2.0.0+|Gradle 2.10+|Build Tools 21.1.1+|
+Android Studio 2.1.0+|Gradle 2.10+|Build Tools 23.0.2+|
+Android Studio 2.1.3+|Gradle 2.14.1+|Build Tools 23.0.2+|
+Android Studio 2.2.0+|Gradle 2.14.1+|Build Tools 23.0.2+|
+Android Studio 2.3.0+|Gradle 3.3+|Build Tools 25.0.0+|
+Android Studio 3.0.0+|Gradle 4.1+|Build Tools 26.0.2+ |CMake 3.7+
+Android Studio 3.1.0+|Gradle 4.4+|Build Tools 27.0.3+ |官网没说
 
 ### 二、Android Studio版本历史：
 
 > **更多关于Android Studio介绍可以查看：**
 > [https://developer.android.google.cn/studio/releases/](https://developer.android.google.cn/studio/releases/)
 
-	3.1.2（2018年4月）
-	3.1.1（2018年4月）
-	3.1.0 (2018年3月)
-	3.0.1（2017年11月）
-	3.0.0 (2017年10月)
-	2.3.3（2017年6月）
-	2.3.2（2017年5月）
-	2.3.1（2017年4月）
-	2.3.0 (2017年3月)
-	2.2.3（2016年12月）
-	2.2.2（2016年10月）
-	2.2.1（2016年10月）
-	2.2.0 (2016年9月)
-	2.1.3（2016年8月）
-	2.1.2（2016年6月）
-	2.1.1（2016年5月）
-	2.1.0 (2016年4月)
-	2.0.0 (2016年4月)
+	Android Studio 3.1.2（2018年4月）
+	Android Studio 3.1.1（2018年4月）
+	Android Studio 3.1.0 (2018年3月)
+	Android Studio 3.0.1（2017年11月）
+	Android Studio 3.0.0 (2017年10月)
+	Android Studio 2.3.3（2017年6月）
+	Android Studio 2.3.2（2017年5月）
+	Android Studio 2.3.1（2017年4月）
+	Android Studio 2.3.0 (2017年3月)
+	Android Studio 2.2.3（2016年12月）
+	Android Studio 2.2.2（2016年10月）
+	Android Studio 2.2.1（2016年10月）
+	Android Studio 2.2.0 (2016年9月)
+	Android Studio 2.1.3（2016年8月）
+	Android Studio 2.1.2（2016年6月）
+	Android Studio 2.1.1（2016年5月）
+	Android Studio 2.1.0 (2016年4月)
+	Android Studio 2.0.0 (2016年4月)
 
 ### 三、Build Tools 版本号历史：
 
