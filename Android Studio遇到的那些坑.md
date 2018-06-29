@@ -266,7 +266,7 @@ Re-download dependencies and sync project (requires network)
 
  ![Android遇到的问题19对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9819%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
 
->原因：build.gradle的兼容包和compileSdkVersion配置不对引起的，关于这个匹配，请查看[Android Studio和gradle版本对照.txt](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Android%20Studio%E5%92%8Cgradle%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7.txt)
+>原因：build.gradle的兼容包和compileSdkVersion配置不对引起的，关于这个匹配，请查看[Android Studio和gradle版本对照](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Android%20Studio%E5%92%8Cgradle%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7.md)
 
 >解决办法：让兼容包和compileSdkVersion匹配就OK了
 
