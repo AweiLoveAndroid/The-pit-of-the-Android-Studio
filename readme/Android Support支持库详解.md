@@ -129,8 +129,11 @@
 
 ## 第三章、功能
 
-
 　　Android 支持库软件包含可以添加至应用的多个库。每个库均支持特定范围的 Android 平台版本和功能。
+　　
+　　下面是一张图描述了所有的Support库：
+　　
+　　![](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%20Support%E6%89%80%E6%9C%89%E7%9A%84%E7%9A%84%E5%BA%93.png?raw=true)
 
 　　本指南介绍了各支持库提供的重要功能和版本支持，从而帮助您决定在应用中添加哪些支持库。一般而言，我们建议添加 **v4 支持库** 和 **v7 appcompat 库**，因为它们支持一系列 Android 版本，并且可以为推荐的用户界面模式提供 API。
 
