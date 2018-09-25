@@ -15,12 +15,12 @@
 
 ### :+1: :five: [Android Studio常用模板用法和自定义模板](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E5%B8%B8%E7%94%A8%E6%A8%A1%E6%9D%BF%E7%94%A8%E6%B3%95%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF.md)
 
-### :fire: :six: [Android Studio好用的插件](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6.md)
+### :fire: :six: [Android Studio各种实用的插件全面总结](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6.md)
 
 ### :point_right: :seven: [Android Studio被忽视的小技巧.md](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E8%A2%AB%E5%BF%BD%E8%A7%86%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.md)
 
-### :point_right: :eight: [Android支持库详解](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%E6%94%AF%E6%8C%81%E5%BA%93%E8%AF%A6%E8%A7%A3.md)
+### :point_right: :eight: [Android所有的Suooprt支持库详解](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%E6%94%AF%E6%8C%81%E5%BA%93%E8%AF%A6%E8%A7%A3.md)
 
-### :point_right: :nine: [Android注解库的使用](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%E6%B3%A8%E8%A7%A3%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8.md)
+### :point_right: :nine: [Android Annotations Library 安卓注解库的使用](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%E6%B3%A8%E8%A7%A3%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 
 ### :pencil: :keycap_ten: 关于NDK开发遇到的坑总结(正在整理中...),关于ndk的配置可以查看官网介绍：[https://developer.android.google.cn/studio/projects/add-native-code](https://developer.android.google.cn/studio/projects/add-native-code)
