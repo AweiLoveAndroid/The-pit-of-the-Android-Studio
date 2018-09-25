@@ -2,10 +2,10 @@
 
 ## 前言
 
-Android Support Library（安卓注解库） 从 19.1 版本开始引入了一个新的注解库，其中包含了很多的元注解，使用它们修饰我们的代码， 可以让我们提高程序的开发效率，让我们更早的发现问题。以及对代码施以规范，让代码更加有可读性。这篇文章就来简单了解下这些注解，以及其使用。如有错误和遗漏，欢迎留言和补充～
+Android Support-annotations Library（安卓注解库） 从 19.1 版本开始引入了一个新的注解库，其中包含了很多的元注解，使用它们修饰我们的代码， 可以让我们提高程序的开发效率，让我们更早的发现问题。以及对代码施以规范，让代码更加有可读性。这篇文章就来简单了解下这些注解，以及其使用。如有错误和遗漏，欢迎留言和补充～
 
 > 注：现在我们新建项目直接就依赖了 support.appcompat 包，其中已经依赖了 annotations 包。如果你的项目中写如下注解报错，可以添加注解包：
- 
+
     dependencies {
         compile 'com.android.support:support-annotations:22.2.0'
     }
@@ -17,11 +17,11 @@ Android Support Library（安卓注解库） 从 19.1 版本开始引入了一�
     @IntDef({RED, BLUE, YELLOW})
     @Retention(RetentionPolicy.SOURCE)
     public @interface LightColors{};
-
+    
     public static final int RED = 1;
     public static final int BLUE = 2;
     public static final int YELLOW = 3;
-
+    
     public void setColor(@LightColors int color){
     }
 
@@ -51,7 +51,7 @@ Android Support Library（安卓注解库） 从 19.1 版本开始引入了一�
 >
     @Nullable
     public String getData(){
-        return data;
+ ​       return data;
     }
 
 * 3，成员属性。如：
@@ -247,7 +247,7 @@ Android Support Library（安卓注解库） 从 19.1 版本开始引入了一�
 @ColorInt 注解的作用为：限定颜色值。（ARGB：0xAARRGGBB）
 
     public void setColor(@ColorInt int color) {
-
+    
     }
 
 如果直接使用资源 id，则会报错，如下：
@@ -283,7 +283,6 @@ Android Support Library（安卓注解库） 从 19.1 版本开始引入了一�
 ##### @VisibleForTesting：该注解只起到一个注释的作用，告诉其他开发者被标记的代码为什么有这么大的可见程度（为了测试方便）。因此，经常用来修饰 public 或 protected，用来修饰 private 并不会报错，但是没有意义。
 
 ##### @Keep：标记的指定代码在混淆时不会被混淆。
-
 
 --------
 参考：

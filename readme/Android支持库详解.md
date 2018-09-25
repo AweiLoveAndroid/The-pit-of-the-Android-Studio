@@ -73,11 +73,11 @@
 　　要向应用项目中添加支持库，请执行以下操作：
 
 > 1.确保已使用 SDK 管理器下载 Android 支持存储库。
- 
+
 > 2.打开应用的 build.gradle 文件。
- 
+
 > 3.将支持库添加到 dependencies 部分。例如，要添加 v4 core-utils 库，请添加以下行：
- 
+
     dependencies {
     ...
     compile "com.android.support:support-core-utils:24.2.0"
@@ -91,7 +91,7 @@
 　　为现有框架 API 提供支持的支持库类与框架类通常具有相同的名称，但前者位于 android.support 类软件包中，或带有 *Compat 后缀。
 
 > 注意：使用支持库中的类时，确保从相应的软件包中导入类。例如，应用 ActionBar 类时：
- 
+
 * 使用支持库时为 android.support.v7.app.ActionBar。
 * 仅为 API 级别 11 或以上开发时为 android.app.ActionBar。
 
@@ -143,6 +143,11 @@
 　　如需了解有关 v4 支持库所提供类和方法的完整详细信息，请参阅 API 参考中的 [android.support.v4](https://developer.android.google.cn/reference/android/support/v4/app/package-summary.html) 软件包。
 
     注：在支持库修订版 24.2.0 之前，存在一个 v4 支持库。为了提高效率，此库拆分成多个模块。出于向后兼容的考虑，如果您在 Gradle 脚本中列出了 support-v4，您的 APK 将包含所有的 v4 模块。不过，要减少 APK 大小，我们建议仅列出应用需要的特定模块。
+
+**下面用一张图表示一下v4 support包之间的关系：**
+
+![](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Support-V4%E5%BA%93%E7%BB%93%E6%9E%84.png?raw=true)
+
 
 >#### v4 compat 库
 　　为众多框架 API 提供兼容性包装器，例如 Context.obtainDrawable() 和 View.performAccessibilityAction()。
@@ -304,7 +309,7 @@
 * [BrowseFragment](https://developer.android.google.cn/reference/android/support/v17/leanback/app/BrowseFragment.html)   一种用于创建主要布局的片段，主要布局用于浏览类别和媒体项目。(added in version 22.0.0)
 
 * [DetailsFragment](https://developer.android.google.cn/reference/android/support/v17/leanback/app/DetailsFragment.html)   用于 Leanback 细节屏幕的包装器片段。(added in version 22.0.0)
- 
+
 * [PlaybackOverlayFragment](https://developer.android.google.cn/reference/android/support/v17/leanback/app/PlaybackOverlayFragment.html)   用于显示播放控件及相关内容的 [DetailsFragment](https://developer.android.google.cn/reference/android/support/v17/leanback/app/DetailsFragment.html) 子类。(added in version 22.0.0,从api 25.1.0起废弃)
 
 * [SearchFragment](https://developer.android.google.cn/reference/android/support/v17/leanback/app/SearchFragment.html)   用于处理搜索的片段。（added in version 22.0.0）片段可以接收用户的搜索请求并将其传递给应用提供的 [SearchResultProvider](https://developer.android.google.cn/reference/android/support/v17/leanback/app/SearchFragment.SearchResultProvider.html)，    [SearchResultProvider](https://developer.android.google.cn/reference/android/support/v17/leanback/app/SearchFragment.SearchResultProvider.html) 可以将搜索结果返回给 [SearchFragment](https://developer.android.google.cn/reference/android/support/v17/leanback/app/SearchFragment.html)，后者会将结果渲染到 [RowsFragment](https://developer.android.google.cn/reference/android/support/v17/leanback/app/RowsFragment.html) 中。
