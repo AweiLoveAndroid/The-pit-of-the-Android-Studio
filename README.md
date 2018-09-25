@@ -19,7 +19,7 @@
 
 ### :point_right: :seven: [Android Studio被忽视的小技巧.md](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E8%A2%AB%E5%BF%BD%E8%A7%86%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.md)
 
-### :point_right: :eight: [Android所有的Suooprt支持库详解](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%E6%94%AF%E6%8C%81%E5%BA%93%E8%AF%A6%E8%A7%A3.md)
+### :point_right: :eight: [Android所有的Suooprt支持库详解](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/readme/Android%20Support%E6%94%AF%E6%8C%81%E5%BA%93%E8%AF%A6%E8%A7%A3.md)
 
 ### :point_right: :nine: [Android Annotations Library 安卓注解库的使用](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%E6%B3%A8%E8%A7%A3%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 
