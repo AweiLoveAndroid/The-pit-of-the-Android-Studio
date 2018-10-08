@@ -41,7 +41,7 @@
 
 ### 3. Android Studio首次创建项目时卡住，如图所示：
 
- ![Android遇到的问题3对应的图片]()
+ ![Android遇到的问题3对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%983%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
 
   > 解决办法：打开Android Studio安装目录下的 bin 目录,找到 idea.properties 文件,在文件最后追加以下这行代码:
 
