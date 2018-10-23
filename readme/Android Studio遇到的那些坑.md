@@ -6,22 +6,24 @@
 
 	1）关于sdk  点击此处链接: 1
 	
-	2）关于jdk  点击此处链接: 8、9
+	2）关于jdk  点击此处链接: 8、9、27、 28、 29
 	
-	3）关于加速器（Intel HAXM）   点击此处链接： 2、 4、 5、 6
+	3）关于加速器（Intel HAXM）   点击此处链接： 2、3、  4、 5、 6
 	
-	4）关于gradle  点击此处链接：10、 16、 20、 24
+	4）关于gradle  点击此处链接：10、 16、 20、 24、 26
 	
 	5）关于混淆打包  点击此处链接：11
 	
 	6）关于依赖库和插件  点击此处链接：3、 7、 12、 13、 14、 19、 23
 	
-	7）关于配置和源码关联  点击此处链接：15、 17、 21、 22
+	7）关于配置和源码关联  点击此处链接：15、 17、 21、 22、 25
 	
 	8）关于模拟器  点击此处链接：18
 
 
 ### 1. Android Studio第一次启动时出现 unable to access android sdk add-on list
+
+ ![Android遇到的问题1对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%981%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
 
   > 出现原因:电脑没有sdk,studio也没有自带sdk;
 
@@ -48,7 +50,7 @@
     disable.android.first.run=true
 
 
-### 4. Intel 加速器 HAXM  ，安装过程中可以会出现如下错误:
+###  4. Intel 加速器 HAXM  ，安装过程中可以会出现如下错误:
     "Failed to configure driver: unknown error. Failed to open driver" 
     
     有以下几个步骤可以解决该问题：
@@ -365,6 +367,142 @@ To override this check from the command line please set the ANDROID_DAILY_OVERRI
 图解如下所示：
 
 ![Android遇到的问题24解决办法](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9824%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.png?raw=true)
+
+
+### 25.AppConfig.java文件中文乱码，log也乱码问题的解决。
+
+ ![Android遇到的问题25对应的图片1](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9825%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%871.png?raw=true)
+
+
+
+> 解决办法：找到对应的module或者lib，打开里面的build.gradle，输入以下代码：
+
+**新版gradle用这个：**
+
+```
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+```
+
+**旧版gradle用这个：**
+
+```
+tasks.withType(JavaCompile) {
+     options.encoding = "UTF-8"
+}
+```
+
+ ![Android遇到的问题25对应的图片2](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9825%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%872.png?raw=true)
+
+【另外】：上述方法如果不管用，试着点击Android studio右下角的文件编码按钮，图中红色区域，然后选择UTF-8改选为GBK。
+
+ ![Android遇到的问题25对应的图片3](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9825%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%873.png?raw=true)
+ 
+ 此时会弹出窗口提示是否重载文件，选择“Reload”，基本也可以搞定。
+ 
+  ![Android遇到的问题25对应的图片4](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9825%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%874.png?raw=true)
+
+如果设置之后还是不行，建议clean一下，重启一下Android Studio。
+
+### 26.failed to complete gradle execution问题
+
+> 使用Android Studio创建新项目后，一直出现 “Failed to complete Gradle execution. Cause: A fatal exception has occurred. Program will exit”这个问题。
+
+![Android遇到的问题26对应的图片1](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9826%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%871.png?raw=true)
+
+**解决方法有2个（2种方式实质上还是一样的）**
+
+> 方法1：打开工程的gradle.properties文件，添加如下配置项，这个问题应该就不会出现了。
+
+    org.gradle.jvmargs=-Xmx512m -XX:MaxPermSize=512m
+     
+如下图所示：
+
+![Android遇到的问题26对应的图片2](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9826%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%872.png?raw=true)
+
+
+
+> 方法2：在Android Studio中，选择File -> Settings -> Compiler -> 在VM options选项中填写：
+
+    -Xmx512m -XX:MaxPermSize=512m
+      
+如下图所示：
+
+![Android遇到的问题26对应的图片3](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9826%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%873.png?raw=true)
+
+### 27.控制台乱码的解决方式：
+
+> 旧版本的gradle
+
+```
+tasks.withType(Compile) {
+    options.encoding = "UTF-8"
+}
+```
+
+> 新版本的gradle
+
+```
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+```
+
+### 28.AS 2.X如何支持java8？
+
+AS 2.X最高是支持java7的环境，要想支持java8，可以做以下设置：
+
+> 如果是安卓的module，可以做以下配置：
+
+```
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.lzw.java8demo"
+        minSdkVersion 25
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // 这个别忘记加上去
+        jackOptions {
+            enabled true
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 指定java8编译
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+```
+
+> 如果是创建的Java的module，在gradle最后加上以下配置：
+
+```
+ sourceCompatibility = "1.8"
+ targetCompatibility = "1.8"
+```
+
+### 29.Error:Execution failed for task':apptransformClassesWithDesugarForDebug'
+
+ ![Android遇到的问题29对应的图片](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/Android%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%9829%E5%AF%B9%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87.png?raw=true)
+
+我看报错那里说的是注解报的错，我怀疑是jdk不一致导致的。我是打开IDE报的错，我把as的配置导入到了IDE，打开项目就报错了，as用的是jdk1.8，不知道这个IDE是不是要用jdk1.7？
+目前还没找到原因。。
 
 ----
 
