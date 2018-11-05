@@ -16,6 +16,7 @@ Plugin版本( Android Studio 版本)|Gradle 版本
 2.3.0+	|3.3+
 3.0.0+|	4.1+
 3.1.0+|	4.4+
+3.2.0+| 4.6+
 
 > **下图是我根据谷歌的官网找到的资料整理的一张表，这张图可以很直观的看到Android Studio版本、Gradle版本、Build Tools版本三者之间的相互匹配关系，大家可以对照着这个图查看，这张图可以解决大家关于版本匹配遇到的难题。**
 
@@ -38,12 +39,17 @@ Android Studio 2.2.0+|Gradle 2.14.1+|Build Tools 23.0.2+|
 Android Studio 2.3.0+|Gradle 3.3+|Build Tools 25.0.0+|
 Android Studio 3.0.0+|Gradle 4.1+|Build Tools 26.0.2+ |CMake 3.7+
 Android Studio 3.1.0+|Gradle 4.4+|Build Tools 27.0.3+ |官网没说
+Android Studio 3.2.0+|Gradle 4.6+|Build Tools 28.0.3+ |
 
 ### 二、Android Studio版本历史：
 
 > **更多关于Android Studio介绍可以查看：**
 > [https://developer.android.google.cn/studio/releases/](https://developer.android.google.cn/studio/releases/)
 
+	Android Studio 3.2.1 (2018年10月)
+	Android Studio 3.2.0 (2018年9月)
+	Android Studio 3.1.4 (2018年8月)
+	Android Studio 3.1.3 (2018年6月)
 	Android Studio 3.1.2（2018年4月）
 	Android Studio 3.1.1（2018年4月）
 	Android Studio 3.1.0 (2018年3月)
@@ -68,6 +74,8 @@ Android Studio 3.1.0+|Gradle 4.4+|Build Tools 27.0.3+ |官网没说
 > **每个版本的详细描述可以查看：**
 > [https://developer.android.google.cn/studio/releases/build-tools](https://developer.android.google.cn/studio/releases/build-tools)
 
+	Build Tools 28.0.3 （2018年9月）
+	Build Tools 28.0.2 （2018年8月）
 	Build Tools 27.0.3 （2017年12月）
 	Build Tools 27.0.2 （2017年12月）
 	Build Tools 27.0.1 （2017年11月）
@@ -109,7 +117,8 @@ Android Studio 3.1.0+|Gradle 4.4+|Build Tools 27.0.3+ |官网没说
 >
 > **26以前的详情可以参考（<=26）：**
 > [https://developer.android.google.cn/topic/libraries/support-library/rev-archive](https://developer.android.google.cn/topic/libraries/support-library/rev-archive)
-
+	
+	28.0.0（2018年8月）
 	27.1.1（2018年4月）
 	27.1.0（2018年2月）
 	27.0.2（2017年11月）
