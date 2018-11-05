@@ -7,7 +7,7 @@
     1.Android Studio软件默认安装路径 C:\Program Files\Android\Android Studio
      【tips：】安装Android Studio的时候，会提示设置Android Studio安装路径，最好是自己选择一个非C盘的目录
       ★ 我电脑上的Android Studio软件安装路径  E:\develop\Android Studio2.3.3
-
+    
     2.SDK默认安装路径 C:\Users\Administrator\AppData\Local\Android\sdk
      【tips：】安装Android Studio的时候，会提示设置sdk安装路径，最好是自己选择一个非C盘的目录（下文有设置sdk路径讲解）
       ★ 我电脑上的SDK安装的实际路径  E:\develop\sdk
@@ -16,13 +16,13 @@
     3.默认工程目录 C:\Users\Administrator\AndroidstudioProjects
      【tips：】首次打开Android Studio的时候，会提示设置项目路径，如果不设置，就用的默认的路径，
       ★ 我电脑上的工程目录的实际路径  E:\AndroidStudioWorkspace
-
+    
     4.Gradle默认安装路径 C:\Users\Administrator\.gradle\wrapper\dists\gradle-3.3-all\3jdgemv0iv8uqohg3kcp2o88r1目录
       下（\gradle-3.3-all\3jdgemv0iv8uqohg3kcp2o88r1这个根据各人电脑安装的gradle版本不同有所不同，我这里显示的我电脑安装的版本）
-
+    
       ★ 另外Android Studio安装目录里面自带有一个gradle安装包，比如我的Android Studio自带的gradle路径是
        E:\develop\Android Studio2.3.3\gradle\gradle-3.3 
-
+    
     5.Android Studio插件默认安装路径 C:\Users\n-260\.AndroidStudio2.3\config\plugins
      【tips：】不建议更改这个插件安装的路径，会出一些问题，在Android Studio遇到的那些坑.md里面有相关讲解，这里就不细说了。
 
@@ -31,29 +31,153 @@
 ##### 1. 查看studio版本:
 
     点菜单栏的 help --> About  (请查看 studio安装路径 )
-	 ▼ 显示的内容如下：
-	 Android Studio 2.3.3
-	 Build #AI-162.4069837, built on June 6, 2017
-	 JRE: 1.8.0_112-release-b06 amd64
-	 JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
-
+     ▼ 显示的内容如下：
+     Android Studio 2.3.3
+     Build #AI-162.4069837, built on June 6, 2017
+     JRE: 1.8.0_112-release-b06 amd64
+     JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+    
      通过看第一行得知，Android Studio版本是 2.3.3
-  
+
 ##### 2. 查看gradle版本（请查看 studio安装路径\gradle\gradle-XXX）
 
     1.比如我的Android Studio自带的gradle路径是 E:\develop\Android Studio2.3.3\gradle\gradle-3.3 ,就可以看到gradle版本是 3.3
-
+    
     2.查看当前设置的Gradle的版本及Gradle插件的版本
       ====> 点击菜单 File --> Project Structure --> 选择 Project,在对话框的右侧可以看到Gradle的版本及Gradle插件的版本
 
 
 ##### 3. 查看本地的sdk编译版本：
- 
-      在项目的modle或者lib里面的的build.gralde里面有个 buildToolsVersion ，这就是sdk的编译版本,查找路径如下：
 
+      在项目的modle或者lib里面的的build.gralde里面有个 buildToolsVersion ，这就是sdk的编译版本,查找路径如下：
+    
       ★ 我电脑安装的SDK路径是  E:\develop\sdk，查看sdk编译版本路径在 E:\develop\sdk\build-tools
 
-### （三）常用设置( 快捷键Ctrl + Alt + S 打开Settings )
+----
+
+### （三）关于Android Studio的`build.gradle`里添加依赖库 在本地的存放路径
+
+>  **1.项目根目录下`build.gradle`文件的 `dependencies`，在C盘的 `.gradle\caches\modules-2\files-2.1\`目录去查找：**
+
+例如：
+
+```
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        // 我们重点看这一个
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.0"
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+```
+
+上例中` classpath 'com.android.tools.build:gradle:3.1.3'` 对应本地的路径是：
+
+`C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.android.tools.build\gradle\3.1.3`  其中	`Users`代表的是你当前电脑的用户名
+
+上例中`classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"`对应本地的路径是：`C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin\1.3.0`
+
+
+
+**如下图所示：**
+
+![](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/android%20studio%20gradle%E8%B7%AF%E5%BE%84.png?raw=true)
+
+
+
+>  **2.module的`build.gradle`文件的 `dependencies`：**
+
+###### （1）android自己的jar包放在SDK的目录下，gradle构建时若发现本地没有该jar包则会去联网下载。
+
+例如：`compile 'com.android.support:appcompat-v7:25.0.0' `
+
+**【注意】AS3.0以前是`compile`  AS3.0+是 `implementation`**
+
+ 这个jar存放的共同的本地路径是：`sdk根路径\extras\`
+
+
+
+下面把常用的android自带的jar包存放在本地的路径做一个统计表，如下：
+
+> **★ 1.support库**
+
+###### support库统一的根路径：sdk根路径\extras\android\m2repository\com\android\support\
+
+###### support库源码路径： sdk根路径\extras\android\support\
+
+> 一般support库：
+
+|依赖库类型|android依赖库|本地存放路径|
+|----|----|-----|
+|v4compat库|implementation'com.android.support:support-compat:24.2.0'|support-compat\24.2.0|
+|v4core-utils库|implementation'com.android.support:support-core-utils:24.2.0'|support-core-utils\24.2.0|
+|v4core-ui库|implementation'com.android.support:support-core-ui:24.2.0'|support-core-ui\24.2.0|
+|v4media-compat库|implementation'com.android.support:support-media-compat:24.2.0'|support-media-compat\24.2.0|
+|v4fragment库|implementation'com.android.support:support-fragment:24.2.0'|support-fragment\24.2.0|
+|Dalvik可执行文件分包支持库|implementation'com.android.support:multidex:1.0.0'|multidex\1.0.0|
+|v7appcompat库|implementation'com.android.support:appcompat-v7:24.2.0'|appcompat-v7\24.2.0|
+|v7cardview库|implementation'com.android.support:cardview-v7:24.2.0'|cardview-v7\24.2.0|
+|v7gridlayout库|implementation'com.android.support:gridlayout-v7:24.2.0'|gridlayout-v7\24.2.0|
+|v7mediarouter库|implementation'com.android.support:mediarouter-v7:24.2.0'|mediarouter-v7:\4.2.0|
+|v7palette库|implementation'com.android.support:palette-v7:24.2.0'|palette-v7\24.2.0|
+|v7recyclerview库|implementation'com.android.support:recyclerview-v7:24.2.0'|recyclerview-v7\24.2.0|
+|v7Preference支持库|implementation'com.android.support:preference-v7:24.2.0'|preference-v7\24.2.0|
+|v13支持库|implementation'com.android.support:support-v13:24.2.0'|support-v13\24.2.0|
+|v14Preference支持库|implementation'com.android.support:preference-v14:24.2.0'|preference-v14\24.2.0|
+|v17Preference支持库|implementation'com.android.support:preference-v17:24.2.0'|preference-v17\24.2.0|
+|v17Leanback库|implementation'com.android.support:leanback-v17:24.2.0'|leanback-v17\24.2.0|
+|注解支持库库|implementation'com.android.support:support-annotations:24.2.0'|support-annotations\24.2.0|
+|设计支持库|implementation'com.android.support:design:24.2.0'|design\24.2.0|
+|自定义标签页支持库|implementation'com.android.support:customtabs:24.2.0'|customtabs\24.2.0|
+|百分比支持库|implementation'com.android.support:percent:24.2.0'|percent\24.2.0|
+|适用于电视的建议支持库|implementation'com.android.support:recommendation:24.2.0'|recommendation\24.2.0|
+|exifinterface支持库|implementation 'com.android.support:exifinterface:25.3.0'|exifinterface\25.3.0|
+|vector-drawable支持库|implementation 'com.android.support:support-vector-drawable:25.3.0'|support-vector-drawable\25.3.0|
+|vector-drawable动画库|implementation 'com.android.support:animated-vector-drawable:25.3.0'|animated-vector-drawable\25.3.0|
+
+> constraint-layout支持库:
+
+|依赖库类型|android依赖库|本地存放路径|
+|----|----|-----|
+|constraint-layout支持库|implementation 'com.android.support.constraint:constraint-layout:1.0.2| sdk根路径\extras\m2repository\com\android\support\constraint\constraint-layout\1.0.2 |
+
+​    
+
+> **★ 2.databinding库：**
+
+###### sdk根路径\extras\android\m2repository\com\android\databinding
+
+|依赖库类型|android依赖库|本地存放路径|
+|----|----|-----|
+|databinding:library|implementation 'com.android.databinding:library:1.3.1|library\1.3.1|
+|databinding:baseLibrary|implementation 'com.android.databinding:baseLibrary:1.3.1||
+|databinding:compiler|implementation 'com.android.databinding:compiler:1.3.1||
+|databinding:adapters|implementation 'com.android.databinding:adapters:1.3.1|adapters\1.3.1|
+
+> **★ 3.谷歌开头的一些依赖库的路径是(用的少)：sdk根路径\extras\google\ 路径**
+
+
+###### （2）第三方jar包，在C盘的 `.gradle\caches\modules-2\files-2.1\`目录去查找，gradle构建时若发现本地没有该jar包则会去联网下载。
+
+例如：`implementation 'com.squareup.picasso:picasso:2.5.2'`
+
+这个jar包存放的本地路径是：`C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.jakewharton.rxbinding\rxbinding\0.4.0 `
+
+如下图所示：
+
+![](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/android%20studio%E4%B8%89%E6%96%B9%E5%BA%93%E8%B7%AF%E5%BE%84.png?raw=true)
+
+----
+
+### （四）常用设置( 快捷键Ctrl + Alt + S 打开Settings )
 
 ##### 1.studio设置自动导包:
 
@@ -81,7 +205,7 @@
 ##### 6.驼峰选择  通常我们通过 Ctrl + Left / Right 键改变字符选择区域的时候 Android Studio 默认不支持‘驼峰’单词的选择。
 
     File  --> Settings --> Editor --> General --> Smart Keys --> 选中 Use “CamelHumps” words
-
+    
     【tips：】如果你仍然希望当鼠标在单词上双击之后选中整个单词，需要作如下设置：
     File  --> Settings --> Editor --> General --> 取消选中 ‘Honor Camel Humps words settings when selecting on double click’
 
@@ -95,14 +219,14 @@
     File --> Settings --> 选择 Editor --> Color & Fonts --> Android Logcat -->点击 Click on Save As…创建一个
     新的配色 Scheme，按照下面的表格修改对应的颜色(修改之前需要取消勾选 Use inherited attributes)
 
-Log级别|颜色
--|-
-Assert|#AA66CC
-Debug|#33B5E5
-Error|#FF4444
-Info:|#99CC00
-Verbose|#FFFFFF
-Warning|#FFBB33
+| Log级别 | 颜色    |
+| ------- | ------- |
+| Assert  | #AA66CC |
+| Debug   | #33B5E5 |
+| Error   | #FF4444 |
+| Info:   | #99CC00 |
+| Verbose | #FFFFFF |
+| Warning | #FFBB33 |
 
 ##### 9.代码配色（因人而异）
 
@@ -115,12 +239,12 @@ Warning|#FFBB33
 
     点击project哪一行的有一个圆的齿轮,点击一下,选择Flatten Packages 就可以像eclipse那样完全显示了,反之,去掉这个对勾,就是studio的样式了. 
 
-### （四）其他设置
+### （五）其他设置
 
 ##### 1)Android Studio首次安装运行时卡在更新处理方法，Android Studio安装目录下的 bin 目录下,找到 idea.properties 文件,在文件最后追加以下这行代码：
 
     disable.android.first.run=true
- 
+
 ##### 2)打开快捷键设置
 
     File --> Settings --> Keymap，然后要修改哪个快捷键，自己去看
@@ -128,27 +252,27 @@ Warning|#FFBB33
 ##### 3)禁用studio的自动检查更新
 
     File --> Settings --> Appearance & Behavior --> System Settings --> Updates,取消对钩就是禁止更新,右侧的列表，是更新通道。
-
+    
     Stable Channel ： 正式版本通道，只会获取最新的正式版本。(最稳定)
     Beta Channel ： 测试版本通道，只会获取最新的测试版本。
     Dev Channel ： 开发发布通道，只会获取最新的开发版本。
     Canary Channel ： 预览发布通道，只会获取最新的预览版本(问题较多,不建议选择这个)
- 
+
 
 ##### 4）设置 Gradle 的离线模式：
 
     File --> Settings --> Bulid,Execution,Deployment --> Bulid Tools --> Gradle,把以下这两个打钩：
       1.use default gradle wapper (推荐用这个歌)
       2.Offline work（离线模式）
- 
+
 ##### 5)设置 Android SDK路径
 
     Settings --> Appearance and Behavior --> System Settings --> Android SDK
- 
+
 ##### 6)运行Android Studio会提醒你 JDK 或者 Android SDK 不存在,你需要到全局的Project Structure 页面下进行设置。进入全局的Project Structure 页面方法如下：
 
     方法1:(打开一个项目，点击close project就可以看到了)选择 Configure --> Project Defaults --> Project Structure
-	
+    
     方法2:选择 File --> Other Settings --> Default Project Structure,设置 JDK 或者 Android SDK 目录即可
 
 ##### 7)插件安装
@@ -162,7 +286,7 @@ Warning|#FFBB33
 
 ##### 9) 禁止代码折叠：
 
-    File --> Settings --> Editor --> Code Folding，取消以下3个勾选:
+    File --> Settings --> Editor --> Code Folding，取消以下3个勾选:
       One-line methods
       "Closures"(anonymous classes implementing one method,before Java 8)
       Generic constructor and method parameters
@@ -170,18 +294,18 @@ Warning|#FFBB33
 ##### 10)使用炫酷的黑色界面
 
     Settings --> Appearance --> Theme ，选择 Darcula 主题
- 
+
 ##### 11)显示空格(这样就能看出缩进是 tab 缩进还是空格缩进,建议使用tab缩进)
 
     File --> Settings --> Editor --> General --> Appearance，勾选 Show whitespaces
- 
+
 ##### 12)修改注释位置，禁用“语句堆一行”：
 
     File --> Settings --> Editor --> Code Style --> Java，点击右边的Wrapping and Braces，把下面这两个对勾去掉：
     □ Comment at frist column：禁用表示根据缩进来注释，否则注释位于句首。
     □ Control statement in one line：如果勾上，格式化代码的时候，会把些很短的语句合并成一行。
 
-
+----
 
 # 二、快捷键
 
@@ -196,12 +320,14 @@ Warning|#FFBB33
 * Alt + 回车Enter （1）生成变量; （2）快速修复错误; （3）光标停在类上，实现自动导包
 
 * Ctrl + Shift + Enter 快速补全语句。
- 
+
          如if(){}、switch(){}代码块，只要输入if或者switch（甚至sw），接着按Ctrl + Shift + Enter可以快速完形代码块。
 
 * Alt + Insert 快速插入代码。
 
         快速生成构造函数、getter和setter方法、重写方法，有些插件入口（比如GsonFormat）也会显示在这儿
+
+----
 
 ### （二）非常常用
 
@@ -228,7 +354,7 @@ Warning|#FFBB33
 * Ctrl + 鼠标左键 快速查看任何类的源码
 
 * Alt + J 多处选择。
- 
+
         识别当前选中字符串，选择下一个同样的字符串，并且添加一个光标。相同字符串太多的话，需要多次重复操作这个快捷键。
 
 * Alt + 鼠标拖动 多行、列选择。
@@ -240,7 +366,7 @@ Warning|#FFBB33
 * Ctrl + W 从光标处开始，逐渐扩大选择范围，Ctrl + Shift + W 与之相反
 
 * Ctrl + F12 快速显示outline，查看类中的所有变量、方法、内部类、内部接口。
- 
+
         (它是以弹窗形式展现出来的，内容和Structure面板是相同的，只是展现方式不同)
 
 * 双击Shift 查找任意内容（类、布局、资源，甚至是 窗口Windows、动作Actions、符号Symbols）
@@ -270,10 +396,12 @@ Warning|#FFBB33
 * Ctrl + I 实现接口里面的方法
 
 * Ctrl + Q 查看注释文档。
- 
+
         将鼠标光标定位到某个类名、接口名或者方法名，按Ctrl + Q，会显示出该类、接口、方法的注释。
 
 * Ctrl＋J 查看定义的Live Templates模板
+
+----
 
 ### （三）较常用
 
@@ -315,6 +443,8 @@ Warning|#FFBB33
 
 * F2 或Shift+F2 高亮错误或警告快速定位
 
+----
+
 ### （四）关于 查看类具体对象使用、查看接口实现、查看方法的调用
 
 * Ctrl + H 查看一个类的完整上下继承关系
@@ -342,13 +472,14 @@ Warning|#FFBB33
 
 * Alt + Q 快速查看当前类继承的父类或者实现的接口。（在任意位置都可以查看）
 
+----
 
 ### （五）关于代码补全/智能提示
 
 【tips】使用Enter和Tab进行代码补全的差别
 
     使用Enter时：从光标处插入补全的代码，对原来的代码不做任何操作。
-   
+       
     使用Tab时：从光标处插入补全的代码，并删除后面的代码，直到遇到点号、圆括号、分号或空格为止。
 
 * Ctrl + Shift + Enter 快速补全语句。
@@ -356,10 +487,10 @@ Warning|#FFBB33
         如if(){}、switch(){}代码块，只要输入if或者switch（甚至sw），接着按Ctrl + Shift + Enter可以快速完形代码块。
 
 * Ctrl + Alt + 空格键Space   类名自动完成。
- 
-          输入一个不完整的类名或者接口名，按Ctrl + Alt + Space，会给出完整类名或接口名的提示。
-        （这个是用得最多的，如果习惯eclipse的快捷键可以修改成Alt + /，改了之后有冲突，原来的按那个Alt + /是复制扩展字的快捷键，
-         可以把复制扩展字的快捷键替换成Ctrl + Alt + 空格）
+
+         输入一个不完整的类名或者接口名，按Ctrl + Alt + Space，会给出完整类名或接口名的提示。
+       （这个是用得最多的，如果习惯eclipse的快捷键可以修改成Alt + /，改了之后有冲突，原来的按那个Alt + /是复制扩展字的快捷键，
+        可以把复制扩展字的快捷键替换成Ctrl + Alt + 空格）
 
 * Ctrl + 空格  基本的智能提示
 
@@ -369,8 +500,6 @@ Warning|#FFBB33
 
 * Alt + Shift + / 向后复制循环扩展字
 
-
 ----------
 
 **[关于快捷键的gif操作演示可以查看这篇博客](http://www.open-open.com/lib/view/open1458715872710.html)**
-
