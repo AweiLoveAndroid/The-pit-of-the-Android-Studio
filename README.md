@@ -24,3 +24,34 @@
 ### :point_right: :nine: [Android Annotations Library 安卓注解库的使用](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%E6%B3%A8%E8%A7%A3%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 
 ### :pencil: :keycap_ten: 关于NDK开发遇到的坑总结(正在整理中...),关于ndk的配置可以查看官网介绍：[https://developer.android.google.cn/studio/projects/add-native-code](https://developer.android.google.cn/studio/projects/add-native-code)
+
+----
+
+# 联系我
+
+###  ●  微信：
+
+> 欢迎关注我的微信：`wei_xing_tian_xia`  
+
+###  ●  微信群：
+
+> 由于大家学习热情太高，**微信群目前不能扫码加入了，麻烦大家想进微信群的朋友们，加我微信拉你进群。**
+
+###  ●  微信公众号：
+
+> 我的微信公众号也开通了，欢迎大家关注：`Flutter那些事`，扫码就可以关注了，专注于研究Flutter的公众号，最新最全面的系统的Flutter干货总结都在这个公众号，欢迎关注。
+
+![我的微信公众号](https://github.com/AweiLoveAndroid/Flutter-learning/blob/master/pics/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg?raw=true)
+
+
+###  ●  QQ群：
+
+> 2千人QQ群，**Flutter学习开发交流群，QQ群号：202921297**， 欢迎大家加入。
+
+### ●  个人博客：
+
+[简书博客 AWeiLoveAndroid](https://www.jianshu.com/u/f408bdadacce)
+
+[掘金博客 AWeiLoveAndroid](https://juejin.im/user/5a07c6c0f265da430a501017)
+
+----
