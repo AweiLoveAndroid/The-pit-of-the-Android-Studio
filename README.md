@@ -27,6 +27,14 @@
 
 ----
 
+# 赞赏
+
+如果这个库对您有很大帮助，您愿意支持这个项目的进一步开发和这个项目的持续维护。你可以免费扫描下面的二维码，让我喝一杯咖啡或啤酒。非常感谢您的捐赠。谢谢！
+
+![](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/pic/donation.png?raw=true)
+
+----
+
 # 联系我
 
 ###  ●  微信：
