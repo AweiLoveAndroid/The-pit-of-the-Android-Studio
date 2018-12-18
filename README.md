@@ -1,15 +1,13 @@
 # The-pit-of-the-Android-Studio
 # 老卢独家整理Android Studio的填坑指南
 
-> ### 说明：这里所遇到的坑都是基于`Android Studio3.0以前`的版本。
-
 ### 以下是本文档的主要内容：
 
 ### :fire: :one: [Android Studio版本号、Gradle版本、Build Tools 三者的对照关系表（必看，很多人因此入坑！！！）](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Android%20Studio%E5%92%8Cgradle%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7.md)
 
-### :+1: :two: [Android Studio2.X遇到的那些坑](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E9%81%87%E5%88%B0%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9D%91.md)
+### :fire::+1: :two: [Android Studio2.X遇到的那些坑](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E9%81%87%E5%88%B0%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9D%91.md)
 
-### :+1: :three: [Android Studio3.0+填坑指南](http://www.jianshu.com/p/b45d68c98828)
+### :fire::+1: :three: [Android Studio3.0+填坑指南](http://www.jianshu.com/p/b45d68c98828)
 
 ### :+1: :four: [Android Studio常用设置和快捷键](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
 
