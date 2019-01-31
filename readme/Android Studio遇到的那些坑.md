@@ -16,7 +16,7 @@
 	
 	6）关于依赖库和插件  点击此处链接：3、 7、 12、 13、 14、 19、 23
 	
-	7）关于配置和源码关联  点击此处链接：15、 17、 21、 22、 25
+	7）关于配置和源码关联  点击此处链接：15、 17、 21、 22、 25、30
 	
 	8）关于模拟器  点击此处链接：18
 
@@ -503,6 +503,19 @@ android {
 
 我看报错那里说的是注解报的错，我怀疑是jdk不一致导致的。我是打开IDE报的错，我把as的配置导入到了IDE，打开项目就报错了，as用的是jdk1.8，不知道这个IDE是不是要用jdk1.7？
 目前还没找到原因。。
+
+
+### 30.Compilation failed to complete和com.android.tools.r8.utils.AbortException 异常
+
+**解决方案：** 在项目的“app/build.gradle”目录里面开启multidex配置：
+```
+android {
+    defaultConfig {
+        multiDexEnabled=true
+    }
+```
+
+
 
 ----
 
