@@ -194,19 +194,19 @@ buildscript {
 
     File --> Settings --> Editor --> General --> Code Completion --> 在 Case sensitive completion 后面的选项改成NONE:进行模糊匹配。(First Letter：根据首字母进行匹配)
 
-![]()
+![](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E8%AE%BE%E7%BD%AE%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D(%E6%97%A7%E7%89%88%E6%9C%AC).png?raw=true)
 
 > 新版本AS：
 
     点击菜单栏File --> Settings --> Editor --> General --> Code Completion --> 只需要把 Match cases 前面的对勾去掉就可以了。（First letter only 意思是：首字母匹配。All letters 意思是：按所有字母适配。）
 
-![]()
+![](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E8%AE%BE%E7%BD%AE%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D(%E6%96%B0%E7%89%88%E6%9C%AC).png?raw=true)
 
 > Mac上面的操作：
 
     点击Android Studio -> Preferences -> Code Completion -> 然后在 Case sensitive completion 后面的选项改成None，进行模糊匹配。
 
-![]()
+![](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/pic/%E8%AE%BE%E7%BD%AE%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D(Mac).png?raw=true)
 
 ##### 4.字体大小设置
 
