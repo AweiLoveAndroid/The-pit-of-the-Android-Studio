@@ -7,7 +7,7 @@
     1.Android Studio软件默认安装路径 C:\Program Files\Android\Android Studio
      【tips：】安装Android Studio的时候，会提示设置Android Studio安装路径，最好是自己选择一个非C盘的目录
       ★ 我电脑上的Android Studio软件安装路径  E:\develop\Android Studio2.3.3
-    
+
     2.SDK默认安装路径 C:\Users\Administrator\AppData\Local\Android\sdk
      【tips：】安装Android Studio的时候，会提示设置sdk安装路径，最好是自己选择一个非C盘的目录（下文有设置sdk路径讲解）
       ★ 我电脑上的SDK安装的实际路径  E:\develop\sdk
@@ -16,13 +16,13 @@
     3.默认工程目录 C:\Users\Administrator\AndroidstudioProjects
      【tips：】首次打开Android Studio的时候，会提示设置项目路径，如果不设置，就用的默认的路径，
       ★ 我电脑上的工程目录的实际路径  E:\AndroidStudioWorkspace
-    
+
     4.Gradle默认安装路径 C:\Users\Administrator\.gradle\wrapper\dists\gradle-3.3-all\3jdgemv0iv8uqohg3kcp2o88r1目录
       下（\gradle-3.3-all\3jdgemv0iv8uqohg3kcp2o88r1这个根据各人电脑安装的gradle版本不同有所不同，我这里显示的我电脑安装的版本）
-    
+
       ★ 另外Android Studio安装目录里面自带有一个gradle安装包，比如我的Android Studio自带的gradle路径是
-       E:\develop\Android Studio2.3.3\gradle\gradle-3.3 
-    
+       E:\develop\Android Studio2.3.3\gradle\gradle-3.3
+
     5.Android Studio插件默认安装路径 C:\Users\n-260\.AndroidStudio2.3\config\plugins
      【tips：】不建议更改这个插件安装的路径，会出一些问题，在Android Studio遇到的那些坑.md里面有相关讲解，这里就不细说了。
 
@@ -36,13 +36,13 @@
      Build #AI-162.4069837, built on June 6, 2017
      JRE: 1.8.0_112-release-b06 amd64
      JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
-    
+
      通过看第一行得知，Android Studio版本是 2.3.3
 
 ##### 2. 查看gradle版本（请查看 studio安装路径\gradle\gradle-XXX）
 
     1.比如我的Android Studio自带的gradle路径是 E:\develop\Android Studio2.3.3\gradle\gradle-3.3 ,就可以看到gradle版本是 3.3
-    
+
     2.查看当前设置的Gradle的版本及Gradle插件的版本
       ====> 点击菜单 File --> Project Structure --> 选择 Project,在对话框的右侧可以看到Gradle的版本及Gradle插件的版本
 
@@ -50,7 +50,7 @@
 ##### 3. 查看本地的sdk编译版本：
 
       在项目的modle或者lib里面的的build.gralde里面有个 buildToolsVersion ，这就是sdk的编译版本,查找路径如下：
-    
+
       ★ 我电脑安装的SDK路径是  E:\develop\sdk，查看sdk编译版本路径在 E:\develop\sdk\build-tools
 
 ----
@@ -71,7 +71,7 @@ buildscript {
         // 我们重点看这一个
         classpath 'com.android.tools.build:gradle:3.1.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.0"
-        
+
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -149,7 +149,7 @@ buildscript {
 |----|----|-----|
 |constraint-layout支持库|implementation 'com.android.support.constraint:constraint-layout:1.0.2| sdk根路径\extras\m2repository\com\android\support\constraint\constraint-layout\1.0.2 |
 
-​    
+?
 
 > **★ 2.databinding库：**
 
@@ -181,7 +181,7 @@ buildscript {
 
 ##### 1.studio设置自动导包:
 
-    File --> Settings --> Editor --> General --> Auto Import --> 勾选上 optimize imports on the fly 和 
+    File --> Settings --> Editor --> General --> Auto Import --> 勾选上 optimize imports on the fly 和
     add unambiguous imports on the fly 的选项即可
 
 ##### 2.显示行号
@@ -190,8 +190,23 @@ buildscript {
 
 ##### 3.不区分大小写
 
-    File --> Settings --> Editor --> General --> Code Completion --> 在 Case sensitive completion 后面的选项改
-    成NONE:进行模糊匹配。(First Letter：根据首字母进行匹配)
+> 旧版本AS：
+
+    File --> Settings --> Editor --> General --> Code Completion --> 在 Case sensitive completion 后面的选项改成NONE:进行模糊匹配。(First Letter：根据首字母进行匹配)
+
+![]()
+
+> 新版本AS：
+
+    点击菜单栏File --> Settings --> Editor --> General --> Code Completion --> 只需要把 Match cases 前面的对勾去掉就可以了。（First letter only 意思是：首字母匹配。All letters 意思是：按所有字母适配。）
+
+![]()
+
+> Mac上面的操作：
+
+    点击Android Studio -> Preferences -> Code Completion -> 然后在 Case sensitive completion 后面的选项改成None，进行模糊匹配。
+
+![]()
 
 ##### 4.字体大小设置
 
@@ -205,13 +220,13 @@ buildscript {
 ##### 6.驼峰选择  通常我们通过 Ctrl + Left / Right 键改变字符选择区域的时候 Android Studio 默认不支持‘驼峰’单词的选择。
 
     File  --> Settings --> Editor --> General --> Smart Keys --> 选中 Use “CamelHumps” words
-    
+
     【tips：】如果你仍然希望当鼠标在单词上双击之后选中整个单词，需要作如下设置：
     File  --> Settings --> Editor --> General --> 取消选中 ‘Honor Camel Humps words settings when selecting on double click’
 
 ##### 7.命名前缀
 
-    File --> Settings --> 选择 Editor --> Code Style --> Java --> 选择 Code Generation 标签 --> 给普通 Field 
+    File --> Settings --> 选择 Editor --> Code Style --> Java --> 选择 Code Generation 标签 --> 给普通 Field
     添加一个’m’前缀，给 Static filed 添加一个’s’前缀
 
 ##### 8.设置log颜色
@@ -237,7 +252,7 @@ buildscript {
 
 ##### 10)设置包类列表的显示方式(eclipse的完全显示或者studio的层级列表样式):
 
-    点击project哪一行的有一个圆的齿轮,点击一下,选择Flatten Packages 就可以像eclipse那样完全显示了,反之,去掉这个对勾,就是studio的样式了. 
+    点击project哪一行的有一个圆的齿轮,点击一下,选择Flatten Packages 就可以像eclipse那样完全显示了,反之,去掉这个对勾,就是studio的样式了.
 
 ### （五）其他设置
 
@@ -252,7 +267,7 @@ buildscript {
 ##### 3)禁用studio的自动检查更新
 
     File --> Settings --> Appearance & Behavior --> System Settings --> Updates,取消对钩就是禁止更新,右侧的列表，是更新通道。
-    
+
     Stable Channel ： 正式版本通道，只会获取最新的正式版本。(最稳定)
     Beta Channel ： 测试版本通道，只会获取最新的测试版本。
     Dev Channel ： 开发发布通道，只会获取最新的开发版本。
@@ -272,7 +287,7 @@ buildscript {
 ##### 6)运行Android Studio会提醒你 JDK 或者 Android SDK 不存在,你需要到全局的Project Structure 页面下进行设置。进入全局的Project Structure 页面方法如下：
 
     方法1:(打开一个项目，点击close project就可以看到了)选择 Configure --> Project Defaults --> Project Structure
-    
+
     方法2:选择 File --> Other Settings --> Default Project Structure,设置 JDK 或者 Android SDK 目录即可
 
 ##### 7)插件安装
@@ -479,7 +494,7 @@ buildscript {
 【tips】使用Enter和Tab进行代码补全的差别
 
     使用Enter时：从光标处插入补全的代码，对原来的代码不做任何操作。
-       
+
     使用Tab时：从光标处插入补全的代码，并删除后面的代码，直到遇到点号、圆括号、分号或空格为止。
 
 * Ctrl + Shift + Enter 快速补全语句。
