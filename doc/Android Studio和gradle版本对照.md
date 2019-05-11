@@ -3,25 +3,26 @@
 ### 一、Android Studio版本、Gradle版本、Build Tools版本图解
 
 
-
 **官网的原版图是这样的：（原网址：[https://developer.android.google.cn/studio/releases/gradle-plugin](https://developer.android.google.cn/studio/releases/gradle-plugin)）**
 
 Plugin版本( Android Studio 版本)|Gradle 版本
--|-
-1.0.0 - 1.1.3|	2.2.1 - 2.3
-1.2.0 - 1.3.1|	2.2.1 - 2.9
-1.5.0|	2.2.1 - 2.13
-2.0.0 - 2.1.2|	2.10 - 2.13
-2.1.3 - 2.2.3|	2.14.1+
+----|----
+3.4.0+|5.1.1+
+3.3.0 - 3.3.2|4.10.1+
+3.2.0 - 3.2.1| 4.6+
+3.1.0+|	4.4+
 2.3.0+	|3.3+
 3.0.0+|	4.1+
-3.1.0+|	4.4+
-3.2.0+| 4.6+
+2.1.3 - 2.2.3|	2.14.1+
+2.0.0 - 2.1.2|	2.10 - 2.13
+1.5.0|	2.2.1 - 2.13
+1.2.0 - 1.3.1|	2.2.1 - 2.9
+1.0.0 - 1.1.3|	2.2.1 - 2.3
 
 > **下图是我根据谷歌的官网找到的资料整理的一张表，这张图可以很直观的看到Android Studio版本、Gradle版本、Build Tools版本三者之间的相互匹配关系，大家可以对照着这个图查看，这张图可以解决大家关于版本匹配遇到的难题。**
 
 Plugin版本( Android Studio 版本)|Gradle 版本 |对应的 Build Tools 版本|对应的 CMake 版本
--|-|-|-
+----|----|----|----
 Android Studio 1.0.0+|Gradle 2.2.1-2.3.x|Build Tools 21.1.1+|
 Android Studio 1.0.1+|Gradle 2.2.1-2.3.x|Build Tools 21.1.1+|
 Android Studio 1.1.0+|Gradle 2.2.1+|Build Tools 21.1.1+|
@@ -41,11 +42,84 @@ Android Studio 3.0.0+|Gradle 4.1+|Build Tools 26.0.2+ |CMake 3.7+
 Android Studio 3.1.0+|Gradle 4.4+|Build Tools 27.0.3+ |官网没说
 Android Studio 3.2.0+|Gradle 4.6+|Build Tools 28.0.3+ |
 
-### 二、Android Studio版本历史：
+
+
+### 二、Kotlin插件版本
+
+> **更多关于Android Studio介绍可以查看：**
+> [https://plugins.gradle.org/plugin/org.jetbrains.kotlin.android](https://plugins.gradle.org/plugin/org.jetbrains.kotlin.android)
+
+在项目的根路径的`build.gradle`里面，有这样的引用：
+
+```
+buildscript {
+    
+    ext.kotlin_version = '1.2.0'
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+```
+
+其中`ext.kotlin_version = '1.2.0'`，这里面的1.2.0就是kotlin插件的版本号。如果不知道版本号，可以在下表中查找：
+
+
+	1.3.31
+	1.3.30
+	1.3.20
+	1.3.11
+	1.3.10
+	1.3.0
+	1.3.0-rc-198
+	1.3.0-rc-190
+	1.2.71
+	1.2.70
+	1.2.61
+	1.2.60
+	1.2.51
+	1.2.50
+	1.2.41
+	1.2.40
+	1.2.31
+	1.2.30
+	1.2.21
+	1.2.20
+	1.2.10
+	1.2.0
+	1.1.61
+	1.1.60
+	1.1.51
+	1.1.50
+	1.1.4-3
+	1.1.4-2
+	1.1.4
+	1.1.3-2
+	1.1.3
+	1.1.2-5
+	1.1.2-2
+	1.1.2
+	1.1.1
+
+
+### 三、Android Studio版本历史：
 
 > **更多关于Android Studio介绍可以查看：**
 > [https://developer.android.google.cn/studio/releases/](https://developer.android.google.cn/studio/releases/)
 
+	Android Studio 3.4.0 (2019年4月)
+	Android Studio 3.3.2 (2019年3月)
+	Android Studio 3.3.1 (2019年2月)
 	Android Studio 3.2.1 (2018年10月)
 	Android Studio 3.2.0 (2018年9月)
 	Android Studio 3.1.4 (2018年8月)
@@ -69,7 +143,7 @@ Android Studio 3.2.0+|Gradle 4.6+|Build Tools 28.0.3+ |
 	Android Studio 2.1.0 (2016年4月)
 	Android Studio 2.0.0 (2016年4月)
 
-### 三、Build Tools 版本号历史：
+### 四、Build Tools 版本号历史：
 
 > **每个版本的详细描述可以查看：**
 > [https://developer.android.google.cn/studio/releases/build-tools](https://developer.android.google.cn/studio/releases/build-tools)
@@ -110,14 +184,14 @@ Android Studio 3.2.0+|Gradle 4.6+|Build Tools 28.0.3+ |
 	Build Tools 18.0.1 （2013年7月）
 	Build Tools 17 （2013年5月）
 
-### 四、关于support包的版本（这个经常容易报错的）：
- 
+### 五、关于support包的版本（这个经常容易报错的）：
+
 > **26以后的详情可以参考（>=26）：**
 > [https://developer.android.google.cn/topic/libraries/support-library/revisions](https://developer.android.google.cn/topic/libraries/support-library/revisions)
 >
 > **26以前的详情可以参考（<=26）：**
 > [https://developer.android.google.cn/topic/libraries/support-library/rev-archive](https://developer.android.google.cn/topic/libraries/support-library/rev-archive)
-	
+
 	28.0.0（2018年8月）
 	27.1.1（2018年4月）
 	27.1.0（2018年2月）
