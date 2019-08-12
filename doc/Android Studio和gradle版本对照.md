@@ -213,7 +213,7 @@ dependencies {
 
 > **每个版本的详细描述可以查看：**
 > [https://developer.android.google.cn/studio/releases/build-tools](https://developer.android.google.cn/studio/releases/build-tools)
-        Build Tools 29.0.0 （2019年6月）
+  ​      Build Tools 29.0.0 （2019年6月）
 	Build Tools 28.0.3 （2018年9月）
 	Build Tools 28.0.2 （2018年8月）
 	Build Tools 27.0.3 （2017年12月）
@@ -311,7 +311,28 @@ dependencies {
 
 ### 七、AndroidX介绍和迁移指南
 
+官方有好几个文件提出了如何迁移到AndroidX库，具体如下：
+
 * **AndroidX概览：** [https://developer.android.google.cn/jetpack/androidx](https://developer.android.google.cn/jetpack/androidx)
 
-* **如何迁移到AndroidX：** [https://developer.android.google.cn/jetpack/androidx/migrate](https://developer.android.google.cn/jetpack/androidx/migrate)
+* **AndroidX和旧的依赖库对照表：** [https://developer.android.google.cn/jetpack/androidx/migrate](https://developer.android.google.cn/jetpack/androidx/migrate)
 
+* **AndroidX各个库的版本号：**  [https://developer.android.google.cn/jetpack/androidx/versions](https://developer.android.google.cn/jetpack/androidx/versions)
+
+###### 但是官方的那几个链接看起来还不是很舒服，想找的东西不好找，有时候你想用一个库接找半天才找到，所以我就把AndroidX和普通的依赖库做成了一张对比表，方便大家查阅和使用。如下图所示（图片很大，需要双击放大才可以看得更清楚，或者直接看原图）：
+
+
+
+> **AndroidX与Support库及其他库的对比：**
+
+![](../pic/AndroidX库和一般的support库版本完整对比图1.png)
+
+> **AndroidX特有的库：**
+
+
+![](../pic/AndroidX库和一般的support库版本完整对比图2.png)
+
+> **不属于AndroidX的库（Design库，没想到基本上常用的Support库都放到AndroidX中了，只有Design库没有放进去，不知道为啥？而且依赖库的包名都不一样？）：**
+
+
+![](../pic/AndroidX库和一般的support库版本完整对比图3.png)
