@@ -63,35 +63,6 @@
 | Android Studio 1.0.1 |Gradle 2.2.1-2.3.x | Build Tools 21.1.1+||
 | Android Studio 1.0.0 |Gradle 2.2.1-2.3.x | Build Tools 21.1.1+||
 
-Android Studio 3.5.0 (2019年8月)
-​	Android Studio 3.4.2 (2019年7月)
-​	Android Studio 3.4.1 (2019年5月)
-​	Android Studio 3.4.0 (2019年4月)
-​	Android Studio 3.3.2 (2019年3月)
-​	Android Studio 3.3.1 (2019年2月)
-​	Android Studio 3.3.0 (2019年1月)
-​	Android Studio 3.2.1 (2018年10月)
-​	Android Studio 3.2.0 (2018年9月)
-​	Android Studio 3.1.4 (2018年8月)
-​	Android Studio 3.1.3 (2018年6月)
-​	Android Studio 3.1.2（2018年4月）
-​	Android Studio 3.1.1（2018年4月）
-​	Android Studio 3.1.0 (2018年3月)
-​	Android Studio 3.0.1（2017年11月）
-​	Android Studio 3.0.0 (2017年10月)
-​	Android Studio 2.3.3（2017年6月）
-​	Android Studio 2.3.2（2017年5月）
-​	Android Studio 2.3.1（2017年4月）
-​	Android Studio 2.3.0 (2017年3月)
-​	Android Studio 2.2.3（2016年12月）
-​	Android Studio 2.2.2（2016年10月）
-​	Android Studio 2.2.1（2016年10月）
-​	Android Studio 2.2.0 (2016年9月)
-​	Android Studio 2.1.3（2016年8月）
-​	Android Studio 2.1.2（2016年6月）
-​	Android Studio 2.1.1（2016年5月）
-​	Android Studio 2.1.0 (2016年4月)
-​	Android Studio 2.0.0 (2016年4月)
 
 ----
 
