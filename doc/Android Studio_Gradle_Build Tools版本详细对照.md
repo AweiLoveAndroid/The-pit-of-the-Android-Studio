@@ -2,7 +2,6 @@
 
 ### 一、Android Studio版本、Gradle版本、Build Tools版本图解
 
-
 **官网的原版图是这样的：（原网址：[https://developer.android.google.cn/studio/releases/gradle-plugin](https://developer.android.google.cn/studio/releases/gradle-plugin)）**
 
 | Plugin版本( Android Studio 版本) | Gradle 版本|
@@ -25,27 +24,74 @@
 
 | Plugin版本( Android Studio 版本) | Gradle 版本 | 对应的 Build Tools 版本 | 对应的 CMake 版本 |
 |----|----|----|----|
-| Android Studio 1.0.0+ |Gradle 2.2.1-2.3.x | Build Tools 21.1.1+||
-| Android Studio 1.0.1+ |Gradle 2.2.1-2.3.x | Build Tools 21.1.1+||
-| Android Studio 1.1.0+ |Gradle 2.2.1+| Build Tools 21.1.1+||
-| Android Studio 1.1.1+ |Gradle 2.2.1+| Build Tools 21.1.1+||
-| Android Studio 1.1.2+ |Gradle 2.2.1+| Build Tools 21.1.1+||
-| Android Studio 1.1.3+ |Gradle 2.2.1+| Build Tools 21.1.1+||
-| Android Studio 1.2.0+ |Gradle 2.2.1+| Build Tools 21.1.1+||
-| Android Studio 1.3.0+ |Gradle 2.2.1+| Build Tools 21.1.1+||
-| Android Studio 1.3.1+ |Gradle 2.2.1+| Build Tools 21.1.1+||
-| Android Studio 1.5.0+ |Gradle 2.2.1+| Build Tools 21.1.1+||
-| Android Studio 2.0.0+ |Gradle 2.10+| Build Tools 21.1.1+||
-| Android Studio 2.1.0+ |Gradle 2.10+| Build Tools 23.0.2+||
-| Android Studio 2.1.3+ |Gradle 2.14.1+ |Build Tools 23.0.2+||
-| Android Studio 2.2.0+ |Gradle 2.14.1+ |Build Tools 23.0.2+||
-| Android Studio 2.3.0+ |Gradle 3.3+ | Build Tools 25.0.0+||
-| Android Studio 3.0.0+ |Gradle 4.1+ | Build Tools 26.0.2+ |CMake 3.7+ |
-| Android Studio 3.1.0+ |Gradle 4.4+ | Build Tools 27.0.3+ |官网没说 |
-| Android Studio 3.2.0+ |Gradle 4.6+ | Build Tools 28.0.3+||
-| Android Studio 3.3.0+ |Gradle 4.10.1+ |Build Tools 28.0.3+||
-| Android Studio 3.4.0+ |Gradle 5.1.1+| Build Tools 28.0.3+||
-| Android Studio 3.5.0+ |Gradle 5.4.1+| Build Tools 28.0.3+||
+| Android Studio 3.5.0+|Gradle 5.4.1+| Build Tools 28.0.3+||
+| Android Studio 3.4.1 |Gradle 5.1.1+| Build Tools 28.0.3+||
+| Android Studio 3.4.0 |Gradle 5.1.1+| Build Tools 28.0.3+||
+| Android Studio 3.3.2 |Gradle 4.10.1+ |Build Tools 28.0.3+||
+| Android Studio 3.3.1 |Gradle 4.10.1+ |Build Tools 28.0.3+||
+| Android Studio 3.3.0 |Gradle 4.10.1+ |Build Tools 28.0.3+||
+| Android Studio 3.2.1 |Gradle 4.6+ | Build Tools 28.0.3+||
+| Android Studio 3.2.0 |Gradle 4.6+ | Build Tools 28.0.3+||
+| Android Studio 3.1.4 |Gradle 4.4+ | Build Tools 27.0.3+ |官网没说 |
+| Android Studio 3.1.3 |Gradle 4.4+ | Build Tools 27.0.3+ |官网没说 |
+| Android Studio 3.1.2 |Gradle 4.4+ | Build Tools 27.0.3+ |官网没说 |
+| Android Studio 3.1.1 |Gradle 4.4+ | Build Tools 27.0.3+ |官网没说 |
+| Android Studio 3.1.0 |Gradle 4.4+ | Build Tools 27.0.3+ |官网没说 |
+| Android Studio 3.0.1 |Gradle 4.1+ | Build Tools 26.0.2+ |CMake 3.7+ |
+| Android Studio 3.0.0 |Gradle 4.1+ | Build Tools 26.0.2+ |CMake 3.7+ |
+| Android Studio 2.3.3 |Gradle 3.3+ | Build Tools 25.0.0+||
+| Android Studio 2.3.2 |Gradle 3.3+ | Build Tools 25.0.0+||
+| Android Studio 2.3.1 |Gradle 3.3+ | Build Tools 25.0.0+||
+| Android Studio 2.3.0 |Gradle 3.3+ | Build Tools 25.0.0+||
+| Android Studio 2.2.3 |Gradle 2.14.1+ |Build Tools 23.0.2+||
+| Android Studio 2.2.2 |Gradle 2.14.1+ |Build Tools 23.0.2+||
+| Android Studio 2.2.1 |Gradle 2.14.1+ |Build Tools 23.0.2+||
+| Android Studio 2.2.0 |Gradle 2.14.1+ |Build Tools 23.0.2+||
+| Android Studio 2.1.3 |Gradle 2.14.1+ |Build Tools 23.0.2+||
+| Android Studio 2.1.2 |Gradle 2.10 - 2.13|Build Tools 23.0.2+||
+| Android Studio 2.1.1 |Gradle 2.10 - 2.13|Build Tools 23.0.2+||
+| Android Studio 2.1.0 |Gradle 2.10 - 2.13| Build Tools 23.0.2+||
+| Android Studio 2.0.0 |Gradle 2.10 - 2.13| Build Tools 21.1.1+||
+| Android Studio 1.5.0 |Gradle 2.2.1 - 2.13| Build Tools 21.1.1+||
+| Android Studio 1.3.1 |Gradle 2.2.1 - 2.9| Build Tools 21.1.1+||
+| Android Studio 1.3.0 |Gradle 2.2.1 - 2.9| Build Tools 21.1.1+||
+| Android Studio 1.2.0 |Gradle 2.2.1 - 2.9| Build Tools 21.1.1+||
+| Android Studio 1.1.3 |Gradle 2.2.1 - 2.3| Build Tools 21.1.1+||
+| Android Studio 1.1.2 |Gradle 2.2.1 - 2.3| Build Tools 21.1.1+||
+| Android Studio 1.1.1 |Gradle 2.2.1 - 2.3| Build Tools 21.1.1+||
+| Android Studio 1.1.0 |Gradle 2.2.1 - 2.3| Build Tools 21.1.1+||
+| Android Studio 1.0.1 |Gradle 2.2.1-2.3.x | Build Tools 21.1.1+||
+| Android Studio 1.0.0 |Gradle 2.2.1-2.3.x | Build Tools 21.1.1+||
+
+Android Studio 3.5.0 (2019年8月)
+​	Android Studio 3.4.2 (2019年7月)
+​	Android Studio 3.4.1 (2019年5月)
+​	Android Studio 3.4.0 (2019年4月)
+​	Android Studio 3.3.2 (2019年3月)
+​	Android Studio 3.3.1 (2019年2月)
+​	Android Studio 3.3.0 (2019年1月)
+​	Android Studio 3.2.1 (2018年10月)
+​	Android Studio 3.2.0 (2018年9月)
+​	Android Studio 3.1.4 (2018年8月)
+​	Android Studio 3.1.3 (2018年6月)
+​	Android Studio 3.1.2（2018年4月）
+​	Android Studio 3.1.1（2018年4月）
+​	Android Studio 3.1.0 (2018年3月)
+​	Android Studio 3.0.1（2017年11月）
+​	Android Studio 3.0.0 (2017年10月)
+​	Android Studio 2.3.3（2017年6月）
+​	Android Studio 2.3.2（2017年5月）
+​	Android Studio 2.3.1（2017年4月）
+​	Android Studio 2.3.0 (2017年3月)
+​	Android Studio 2.2.3（2016年12月）
+​	Android Studio 2.2.2（2016年10月）
+​	Android Studio 2.2.1（2016年10月）
+​	Android Studio 2.2.0 (2016年9月)
+​	Android Studio 2.1.3（2016年8月）
+​	Android Studio 2.1.2（2016年6月）
+​	Android Studio 2.1.1（2016年5月）
+​	Android Studio 2.1.0 (2016年4月)
+​	Android Studio 2.0.0 (2016年4月)
 
 ----
 
@@ -57,7 +103,92 @@ https://developer.android.google.cn/studio/projects/add-native-code.html#vanilla
 
 ----
 
-### 三、Kotlin的Gradle插件的版本号
+### 三、Android Studio版本历史：
+
+> **更多关于Android Studio介绍可以查看：**
+> [https://developer.android.google.cn/studio/releases/](https://developer.android.google.cn/studio/releases/)
+
+```
+	Android Studio 3.5.0 (2019年8月)
+	Android Studio 3.4.2 (2019年7月)
+	Android Studio 3.4.1 (2019年5月)
+	Android Studio 3.4.0 (2019年4月)
+	Android Studio 3.3.2 (2019年3月)
+	Android Studio 3.3.1 (2019年2月)
+	Android Studio 3.2.1 (2018年10月)
+	Android Studio 3.2.0 (2018年9月)
+	Android Studio 3.1.4 (2018年8月)
+	Android Studio 3.1.3 (2018年6月)
+	Android Studio 3.1.2（2018年4月）
+	Android Studio 3.1.1（2018年4月）
+	Android Studio 3.1.0 (2018年3月)
+	Android Studio 3.0.1（2017年11月）
+	Android Studio 3.0.0 (2017年10月)
+	Android Studio 2.3.3（2017年6月）
+	Android Studio 2.3.2（2017年5月）
+	Android Studio 2.3.1（2017年4月）
+	Android Studio 2.3.0 (2017年3月)
+	Android Studio 2.2.3（2016年12月）
+	Android Studio 2.2.2（2016年10月）
+	Android Studio 2.2.1（2016年10月）
+	Android Studio 2.2.0 (2016年9月)
+	Android Studio 2.1.3（2016年8月）
+	Android Studio 2.1.2（2016年6月）
+	Android Studio 2.1.1（2016年5月）
+	Android Studio 2.1.0 (2016年4月)
+	Android Studio 2.0.0 (2016年4月)
+```
+
+----
+
+### 四、Build Tools 版本号历史：
+
+> **每个版本的详细描述可以查看：**
+> [https://developer.android.google.cn/studio/releases/build-tools](https://developer.android.google.cn/studio/releases/build-tools)
+
+```
+	Build Tools 29.0.2 （2019年8月）
+	Build Tools 29.0.0 （2019年6月）
+	Build Tools 28.0.3 （2018年9月）
+	Build Tools 28.0.2 （2018年8月）
+	Build Tools 27.0.3 （2017年12月）
+	Build Tools 27.0.2 （2017年12月）
+	Build Tools 27.0.1 （2017年11月）
+	Build Tools 26.0.2 （2017年10月）
+	Build Tools 26.0.1 （2017年7月）
+	Build Tools 26.0.0 （2017年6月）
+	Build Tools 25.0.3 （2017年4月）
+	Build Tools 25.0.2 （2016年12月）
+	Build Tools 25.0.1 （2016年11月）
+	Build Tools 25.0.0 （2016年10月）
+	Build Tools 24.0.3 （2016年9月）
+	Build Tools 23.0.3 （2016年3月）
+	Build Tools 23.0.2 （2015年11月）
+	Build Tools 23.0.1 （2015年10月）
+	Build Tools 23.0.0 （2015年8月）
+	Build Tools 22.0.1 （2015年3月）
+	Build Tools 22.0.0 （2015年3月）
+	Build Tools 21.1.2 （2015年2月）
+	Build Tools 21.1.1 （2014年11月）
+	Build Tools 21.1 （2014年10月）
+	Build Tools 21.0.2 （2014年10月）
+	Build Tools 21.0.1 （2014年10月）
+	Build Tools 21.0.0 （2014年10月）
+	Build Tools 20.0.0 （2014年6月）
+	Build Tools 19.1.0 （2014年5月）
+	Build Tools 19.0.3 （2014年3月）
+	Build Tools 19.0.2 （2014年2月）
+	Build Tools 19.0.1 （2013年12月）
+	Build Tools 19 （2013年10月）
+	Build Tools 18.1.1 （2013年9月）
+	Build Tools 18.1.0 （2013年9月）
+	Build Tools 18.0.1 （2013年7月）
+	Build Tools 17 （2013年5月）
+```
+
+----
+
+### 五、Kotlin的Gradle插件的版本号
 
 > **更多关于kotin Gradle插件介绍可以查看：**
 > [https://plugins.gradle.org/plugin/org.jetbrains.kotlin.android](https://plugins.gradle.org/plugin/org.jetbrains.kotlin.android)
@@ -89,7 +220,7 @@ buildscript {
 
 其中`ext.kotlin_version = '1.3.50'`，这里面的`1.3.50`就是kotlin Gradle的插件的版本号。如果不知道版本号，可以在下表中查找：
 
-
+```
 	1.3.50
 	1.3.41
 	1.3.40
@@ -129,10 +260,11 @@ buildscript {
 	1.1.2-2
 	1.1.2
 	1.1.1
+```
 
 ----
 
-### 四、Kotlin.android.extensions 的Gradle插件的版本号
+### 六、Kotlin.android.extensions 的Gradle插件的版本号
 
 > **更多关于kotin Gradle插件介绍可以查看：**
 > [https://plugins.gradle.org/plugin/org.jetbrains.kotlin.android.extensions](https://plugins.gradle.org/plugin/org.jetbrains.kotlin.android.extensions)
@@ -166,7 +298,7 @@ apply plugin: "org.jetbrains.kotlin.android.extensions"
 
 其中`ext.kotlin_version = '1.3.50'`，这里面的`1.3.50`就是kotlin Gradle的插件的版本号。如果不知道版本号，可以在下表中查找：
 
-
+```
 	1.3.50
 	1.3.41
 	1.3.40
@@ -206,10 +338,11 @@ apply plugin: "org.jetbrains.kotlin.android.extensions"
 	1.1.2-2
 	1.1.2
 	1.1.1
+```
 
 ----
 
-### 五、Kotlin-stdlib的版本号
+### 七、Kotlin-stdlib的版本号
 
 > **更多关于kotin Gradle插件介绍可以查看：**
 > [https://mvnrepository.com/artifact/org.jetbrains.kotlin](https://mvnrepository.com/artifact/org.jetbrains.kotlin)
@@ -278,91 +411,6 @@ dependencies {
 
 ----
 
-### 六、Android Studio版本历史：
-
-> **更多关于Android Studio介绍可以查看：**
-> [https://developer.android.google.cn/studio/releases/](https://developer.android.google.cn/studio/releases/)
-
-```
-	Android Studio 3.5.0 (2019年8月)
-	Android Studio 3.4.2 (2019年7月)
-	Android Studio 3.4.1 (2019年5月)
-	Android Studio 3.4.0 (2019年4月)
-	Android Studio 3.3.2 (2019年3月)
-	Android Studio 3.3.1 (2019年2月)
-	Android Studio 3.2.1 (2018年10月)
-	Android Studio 3.2.0 (2018年9月)
-	Android Studio 3.1.4 (2018年8月)
-	Android Studio 3.1.3 (2018年6月)
-	Android Studio 3.1.2（2018年4月）
-	Android Studio 3.1.1（2018年4月）
-	Android Studio 3.1.0 (2018年3月)
-	Android Studio 3.0.1（2017年11月）
-	Android Studio 3.0.0 (2017年10月)
-	Android Studio 2.3.3（2017年6月）
-	Android Studio 2.3.2（2017年5月）
-	Android Studio 2.3.1（2017年4月）
-	Android Studio 2.3.0 (2017年3月)
-	Android Studio 2.2.3（2016年12月）
-	Android Studio 2.2.2（2016年10月）
-	Android Studio 2.2.1（2016年10月）
-	Android Studio 2.2.0 (2016年9月)
-	Android Studio 2.1.3（2016年8月）
-	Android Studio 2.1.2（2016年6月）
-	Android Studio 2.1.1（2016年5月）
-	Android Studio 2.1.0 (2016年4月)
-	Android Studio 2.0.0 (2016年4月)
-```
-
-----
-
-### 七、Build Tools 版本号历史：
-
-> **每个版本的详细描述可以查看：**
-> [https://developer.android.google.cn/studio/releases/build-tools](https://developer.android.google.cn/studio/releases/build-tools)
-
-```
-	Build Tools 29.0.2 （2019年8月）
-	Build Tools 29.0.0 （2019年6月）
-	Build Tools 28.0.3 （2018年9月）
-	Build Tools 28.0.2 （2018年8月）
-	Build Tools 27.0.3 （2017年12月）
-	Build Tools 27.0.2 （2017年12月）
-	Build Tools 27.0.1 （2017年11月）
-	Build Tools 26.0.2 （2017年10月）
-	Build Tools 26.0.1 （2017年7月）
-	Build Tools 26.0.0 （2017年6月）
-	Build Tools 25.0.3 （2017年4月）
-	Build Tools 25.0.2 （2016年12月）
-	Build Tools 25.0.1 （2016年11月）
-	Build Tools 25.0.0 （2016年10月）
-	Build Tools 24.0.3 （2016年9月）
-	Build Tools 23.0.3 （2016年3月）
-	Build Tools 23.0.2 （2015年11月）
-	Build Tools 23.0.1 （2015年10月）
-	Build Tools 23.0.0 （2015年8月）
-	Build Tools 22.0.1 （2015年3月）
-	Build Tools 22.0.0 （2015年3月）
-	Build Tools 21.1.2 （2015年2月）
-	Build Tools 21.1.1 （2014年11月）
-	Build Tools 21.1 （2014年10月）
-	Build Tools 21.0.2 （2014年10月）
-	Build Tools 21.0.1 （2014年10月）
-	Build Tools 21.0.0 （2014年10月）
-	Build Tools 20.0.0 （2014年6月）
-	Build Tools 19.1.0 （2014年5月）
-	Build Tools 19.0.3 （2014年3月）
-	Build Tools 19.0.2 （2014年2月）
-	Build Tools 19.0.1 （2013年12月）
-	Build Tools 19 （2013年10月）
-	Build Tools 18.1.1 （2013年9月）
-	Build Tools 18.1.0 （2013年9月）
-	Build Tools 18.0.1 （2013年7月）
-	Build Tools 17 （2013年5月）
-```
-
-----
-
 ### 八、关于support包的版本（这个经常容易报错的）：
 
 > **26以后的详情可以参考（>=26）：**
@@ -426,15 +474,9 @@ dependencies {
 
 -----
 
-### 七、AndroidX介绍和迁移指南
+### 七、AndroidX介绍和迁移指南（support包在28.0.0版本之后使用AndroidX）
 
-官方有好几个文件提出了如何迁移到AndroidX库，具体如下：
-
-* **AndroidX概览：** [https://developer.android.google.cn/jetpack/androidx](https://developer.android.google.cn/jetpack/androidx)
-
-* **AndroidX和旧的依赖库对照表：** [https://developer.android.google.cn/jetpack/androidx/migrate](https://developer.android.google.cn/jetpack/androidx/migrate)
-
-* **AndroidX各个库的版本号：**  [https://developer.android.google.cn/jetpack/androidx/versions](https://developer.android.google.cn/jetpack/androidx/versions)
+这里内容有限，不方便展示太多，具体的每一个细节的内容介绍，可以看我的博客，有详细讲解：**[AndroidX库和一般库的详细对比以及迁移中遇到的坑总结](https://www.jianshu.com/p/391d8547ab8b)**
 
 ###### 但是官方的那几个链接看起来还不是很舒服，想找的东西不好找，有时候你想用一个库接找半天才找到，所以我就把AndroidX和普通的依赖库做成了一张对比表，方便大家查阅和使用。如下图所示（图片很大，需要双击放大才可以看得更清楚，或者直接看原图）：
 
@@ -453,3 +495,11 @@ dependencies {
 
 
 ![](../pic/AndroidX库和一般的support库版本完整对比图3.png)
+
+官方有好几个文件提出了如何迁移到AndroidX库，具体如下：
+
+* **AndroidX概览：** [https://developer.android.google.cn/jetpack/androidx](https://developer.android.google.cn/jetpack/androidx)
+
+* **AndroidX和旧的依赖库对照表：** [https://developer.android.google.cn/jetpack/androidx/migrate](https://developer.android.google.cn/jetpack/androidx/migrate)
+
+* **AndroidX各个库的版本号：**  [https://developer.android.google.cn/jetpack/androidx/versions](https://developer.android.google.cn/jetpack/androidx/versions)
