@@ -7,7 +7,7 @@
     1.Android Studio软件默认安装路径 C:\Program Files\Android\Android Studio
      【tips：】安装Android Studio的时候，会提示设置Android Studio安装路径，最好是自己选择一个非C盘的目录
       ★ 我电脑上的Android Studio软件安装路径  E:\develop\Android Studio2.3.3
-
+    
     2.SDK默认安装路径 C:\Users\Administrator\AppData\Local\Android\sdk
      【tips：】安装Android Studio的时候，会提示设置sdk安装路径，最好是自己选择一个非C盘的目录（下文有设置sdk路径讲解）
       ★ 我电脑上的SDK安装的实际路径  E:\develop\sdk
@@ -16,13 +16,13 @@
     3.默认工程目录 C:\Users\Administrator\AndroidstudioProjects
      【tips：】首次打开Android Studio的时候，会提示设置项目路径，如果不设置，就用的默认的路径，
       ★ 我电脑上的工程目录的实际路径  E:\AndroidStudioWorkspace
-
+    
     4.Gradle默认安装路径 C:\Users\Administrator\.gradle\wrapper\dists\gradle-3.3-all\3jdgemv0iv8uqohg3kcp2o88r1目录
       下（\gradle-3.3-all\3jdgemv0iv8uqohg3kcp2o88r1这个根据各人电脑安装的gradle版本不同有所不同，我这里显示的我电脑安装的版本）
-
+    
       ★ 另外Android Studio安装目录里面自带有一个gradle安装包，比如我的Android Studio自带的gradle路径是
        E:\develop\Android Studio2.3.3\gradle\gradle-3.3
-
+    
     5.Android Studio插件默认安装路径 C:\Users\n-260\.AndroidStudio2.3\config\plugins
      【tips：】不建议更改这个插件安装的路径，会出一些问题，在Android Studio遇到的那些坑.md里面有相关讲解，这里就不细说了。
 
@@ -36,13 +36,13 @@
      Build #AI-162.4069837, built on June 6, 2017
      JRE: 1.8.0_112-release-b06 amd64
      JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
-
+    
      通过看第一行得知，Android Studio版本是 2.3.3
 
 ##### 2. 查看gradle版本（请查看 studio安装路径\gradle\gradle-XXX）
 
     1.比如我的Android Studio自带的gradle路径是 E:\develop\Android Studio2.3.3\gradle\gradle-3.3 ,就可以看到gradle版本是 3.3
-
+    
     2.查看当前设置的Gradle的版本及Gradle插件的版本
       ====> 点击菜单 File --> Project Structure --> 选择 Project,在对话框的右侧可以看到Gradle的版本及Gradle插件的版本
 
@@ -50,7 +50,7 @@
 ##### 3. 查看本地的sdk编译版本：
 
       在项目的modle或者lib里面的的build.gralde里面有个 buildToolsVersion ，这就是sdk的编译版本,查找路径如下：
-
+    
       ★ 我电脑安装的SDK路径是  E:\develop\sdk，查看sdk编译版本路径在 E:\develop\sdk\build-tools
 
 ----
@@ -215,24 +215,56 @@ buildscript {
 
 ##### 5.设置光标悬停时提示文档注释
 
-    File --> Settings --> Editor --> General --> 勾选 Show quick doc on mouse Delay…
+> 旧版本AS：
+
+```
+File --> Settings --> Editor --> General --> 勾选 Show quick documentation on mouse Delay(ms):【？】，然后框框里面填写毫秒数值，我一般写的是500，表示鼠标悬停在代码上面500毫秒就可以看到文档。
+```
+
+> 新版本AS：
+
+```
+File --> Settings --> Editor --> General --> Code Completion --> 然后可以在 Show the documentation popup in 【？】 ms.框框里面填写毫秒数值，我一般写的是500，表示鼠标悬停在代码上面500毫秒就可以看到文档。
+```
 
 ##### 6.驼峰选择  通常我们通过 Ctrl + Left / Right 键改变字符选择区域的时候 Android Studio 默认不支持‘驼峰’单词的选择。
 
-    File  --> Settings --> Editor --> General --> Smart Keys --> 选中 Use “CamelHumps” words
+```
+File  --> Settings --> Editor --> General --> Smart Keys --> 选中 Use “CamelHumps” words
+```
 
-    【tips：】如果你仍然希望当鼠标在单词上双击之后选中整个单词，需要作如下设置：
-    File  --> Settings --> Editor --> General --> 取消选中 ‘Honor Camel Humps words settings when selecting on double click’
+【tips：】如果你仍然希望当鼠标在单词上双击之后选中整个单词，需要作如下设置：
+
+```    
+File  --> Settings --> Editor --> General --> 取消选中 ‘Honor Camel Humps words settings when selecting on double click’
+```
 
 ##### 7.命名前缀
 
-    File --> Settings --> 选择 Editor --> Code Style --> Java --> 选择 Code Generation 标签 --> 给普通 Field
-    添加一个’m’前缀，给 Static filed 添加一个’s’前缀
+    File --> Settings --> 选择 Editor --> Code Style --> Java --> 选择 Code Generation 标签 --> 给 Field 添加一个’m’前缀，给 Static filed 添加一个’s’前缀
 
 ##### 8.设置log颜色
 
-    File --> Settings --> 选择 Editor --> Color & Fonts --> Android Logcat -->点击 Click on Save As…创建一个
-    新的配色 Scheme，按照下面的表格修改对应的颜色(修改之前需要取消勾选 Use inherited attributes)
+> 旧版本AS：
+
+```
+File --> Settings --> 选择 Editor --> Color & Fonts --> Android Logcat -->点击 Click on Save As…创建一个新的配色 Scheme，按照下面的表格修改对应的颜色(修改之前需要取消勾选 Use inherited attributes)
+```
+
+| Log级别 | 颜色    |
+| ------- | ------- |
+| Assert  | #AA66CC |
+| Debug   | #33B5E5 |
+| Error   | #FF4444 |
+| Info:   | #99CC00 |
+| Verbose | #FFFFFF |
+| Warning | #FFBB33 |
+
+> 新版本AS：
+
+```
+File --> Settings --> 选择 Editor --> Color Scheme --> Android Logcat -->点击齿轮图标选择“Duplicate”，然后左侧的文字可以自定义一个，用于识别当前自定义的log是用的哪一套(默认用的是Darcula)。然后按照下面的表格修改对应的颜色(修改之前需要取消勾选 Use inherited attributes)
+```
 
 | Log级别 | 颜色    |
 | ------- | ------- |
@@ -250,9 +282,32 @@ buildscript {
     File --> Settings --> Editor --> Color & Fonts --> Java --> 点击 Click on Save As…按钮创建一个新的配色Scheme
     （之前未创建的就创建一下）--> 展开下方的 Variables 选择 Local variable --> 设置右侧的 Foreground 颜色
 
-##### 10)设置包类列表的显示方式(eclipse的完全显示或者studio的层级列表样式):
+**注：** 新版本的AS做了修改，都在`File --> Settings --> 选择 Editor --> Color Scheme`里面，比如有``Java`,`Kotlin`,`Dart`,`Android Logcat`,`Flutter log`等，根据不同的页岩和开发环境做相应的设置。
+
+##### 10) 禁止代码折叠：
+
+```
+    File --> Settings --> Editor --> Code Folding，取消以下3个勾选:
+      One-line methods
+      "Closures"(anonymous classes implementing one method,before Java 8)
+      Generic constructor and method parameters
+```
+
+##### 11)修改注释位置，禁用“语句堆一行”：
+
+```
+    File --> Settings --> Editor --> Code Style --> Java，点击右边的Wrapping and Braces，把下面这两个对勾去掉：
+    □ Comment at frist column：禁用表示根据缩进来注释，否则注释位于句首。
+    □ Control statement in one line：如果勾上，格式化代码的时候，会把些很短的语句合并成一行。
+```
+
+##### 12)设置包类列表的显示方式(eclipse的完全显示或者studio的层级列表样式):
 
     点击project哪一行的有一个圆的齿轮,点击一下,选择Flatten Packages 就可以像eclipse那样完全显示了,反之,去掉这个对勾,就是studio的样式了.
+
+
+
+----
 
 ### （五）其他设置
 
@@ -265,13 +320,24 @@ buildscript {
     File --> Settings --> Keymap，然后要修改哪个快捷键，自己去看
 
 ##### 3)禁用studio的自动检查更新
+> 旧版本AS:
 
-    File --> Settings --> Appearance & Behavior --> System Settings --> Updates,取消对钩就是禁止更新,右侧的列表，是更新通道。
+```
+File --> Settings --> Appearance & Behavior --> System Settings --> Updates,取消对钩就是禁止更新,右侧的列表，是更新通道(包括：Stable Channel、Beta Channel、Dev Channel、Canary Channel)。    
+```
 
-    Stable Channel ： 正式版本通道，只会获取最新的正式版本。(最稳定)
-    Beta Channel ： 测试版本通道，只会获取最新的测试版本。
-    Dev Channel ： 开发发布通道，只会获取最新的开发版本。
-    Canary Channel ： 预览发布通道，只会获取最新的预览版本(问题较多,不建议选择这个)
+> 新版本AS:
+
+```
+File --> Settings --> Appearance & Behavior --> System Settings --> Updates--> Automatically check updates for 【？】，中括号里面是对应的更新渠道(包括：Stable Channel、Beta Channel、Dev Channel、Canary Channel)，取消对钩就是禁止更新。
+右侧是【check now】，立即检查更新。  `
+```
+**具体每个渠道的意思如下：**
+
+* Stable Channel ： 正式版本通道，只会获取最新的正式版本。(最稳定)
+* Beta Channel ： 测试版本通道，只会获取最新的测试版本。
+* Dev Channel ： 开发发布通道，只会获取最新的开发版本。
+* Canary Channel ： 预览发布通道，只会获取最新的预览版本(问题较多,不建议选择这个)
 
 
 ##### 4）设置 Gradle 的离线模式：
@@ -287,38 +353,46 @@ buildscript {
 ##### 6)运行Android Studio会提醒你 JDK 或者 Android SDK 不存在,你需要到全局的Project Structure 页面下进行设置。进入全局的Project Structure 页面方法如下：
 
     方法1:(打开一个项目，点击close project就可以看到了)选择 Configure --> Project Defaults --> Project Structure
-
+    
     方法2:选择 File --> Other Settings --> Default Project Structure,设置 JDK 或者 Android SDK 目录即可
 
 ##### 7)插件安装
 
-    File --> Settings --> Plugins --> Browse repositories…  搜索插件安装
+> 旧版本AS:
+
+```
+File --> Settings --> Plugins --> Browse repositories…  搜索插件安装
+```
+
+> 新版本AS:
+
+```
+方式1：File --> Settings --> Plugins --> Marketplace，直接搜索插件安装
+
+方式2：File --> Settings --> Plugins --> 点击右侧齿轮图标，选择 Install plugin from Disk，安装本地插件包(可以去http://plugins.jetbrains.com/ 搜索你想要的插件版本进行下载，注意区分插件适用于Intellij版本还是Android Studio版本)。
+```
 
 ##### 8) 每次打开studio 会有个提示，查看和关闭的方式：
 
-    点击菜单栏的 Help --> Tips of the Day  --> 可以查看提示窗，点击上面的Show tips on Startup 对勾去掉，以后再打开就不会
-    出现这个提示了。如果要查看提示，就点击菜单栏的 Help --> Tips of the Day
+    点击菜单栏的 Help --> Tips of the Day  --> 可以查看提示窗，点击上面的Show tips on Startup 对勾去掉，以后再打开就不会出现这个提示了。如果要查看提示，就点击菜单栏的 Help --> Tips of the Day
 
-##### 9) 禁止代码折叠：
+##### 9)使用炫酷的黑色界面
 
-    File --> Settings --> Editor --> Code Folding，取消以下3个勾选:
-      One-line methods
-      "Closures"(anonymous classes implementing one method,before Java 8)
-      Generic constructor and method parameters
+> 旧版本AS:
 
-##### 10)使用炫酷的黑色界面
+```
+Settings --> Appearance --> Theme ，选择 Darcula 主题
+```
 
-    Settings --> Appearance --> Theme ，选择 Darcula 主题
+> 新版本AS:
 
-##### 11)显示空格(这样就能看出缩进是 tab 缩进还是空格缩进,建议使用tab缩进)
+```
+Settings --> Appearance & Behavior --> Appearance --> Theme ，选择 Darcula 主题
+```
+
+##### 10)显示空格(这样就能看出缩进是 tab 缩进还是空格缩进,建议使用tab缩进)
 
     File --> Settings --> Editor --> General --> Appearance，勾选 Show whitespaces
-
-##### 12)修改注释位置，禁用“语句堆一行”：
-
-    File --> Settings --> Editor --> Code Style --> Java，点击右边的Wrapping and Braces，把下面这两个对勾去掉：
-    □ Comment at frist column：禁用表示根据缩进来注释，否则注释位于句首。
-    □ Control statement in one line：如果勾上，格式化代码的时候，会把些很短的语句合并成一行。
 
 ----
 
@@ -494,7 +568,7 @@ buildscript {
 【tips】使用Enter和Tab进行代码补全的差别
 
     使用Enter时：从光标处插入补全的代码，对原来的代码不做任何操作。
-
+    
     使用Tab时：从光标处插入补全的代码，并删除后面的代码，直到遇到点号、圆括号、分号或空格为止。
 
 * Ctrl + Shift + Enter 快速补全语句。
@@ -518,3 +592,7 @@ buildscript {
 ----------
 
 **[关于快捷键的gif操作演示可以查看这篇博客](http://www.open-open.com/lib/view/open1458715872710.html)**
+
+```
+
+```
