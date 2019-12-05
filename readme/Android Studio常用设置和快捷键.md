@@ -181,8 +181,53 @@ buildscript {
 
 ##### 1.studio设置自动导包:
 
-    File --> Settings --> Editor --> General --> Auto Import --> 勾选上 optimize imports on the fly 和
-    add unambiguous imports on the fly 的选项即可
+```
+File --> Settings --> Editor --> General --> Auto Import --> 勾选上 optimize imports on the fly 和 add unambiguous imports on the fly 的选项即可
+```
+
+关于自动导包的所有设置事项，如下所示：
+
+> XML:
+
+* □ Show import popup for 这个是指当你输入的类的声明没被导入时，会弹出一个选择的对话框，然后你就可以选择对应的导入。
+
+> Java:
+
+* Insert imports on paste ________ 这个其实就是你在复制代码的时候，对于导入的包是否需要进行询问的一个选项。,这里有几个候选项：
+
+```
+All:  有需要导入的包名时，会自动导入，不会弹提示框。
+Ask:  有需要导入的包名时，会弹提示框，问你要不要导入。
+None: 有需要导入的包名时，不会弹提示框，也不会自动导入。
+```
+
+* □ Show import popup for  □ classes  □  static methods （一个是类，一个是方法）这个是和上面的Insert imports on paste是不同的，这个是指当你输入的类的声明没被导入时，会弹出一个选择的对话框，然后你就可以选择对应的导入。
+
+* □ Add unambiguous imports on the fly：当你输入类名后，就被自动导入了。
+* □ Optimize imports on fly：这个其实和快捷键Ctrl+Shift+O/Ctrl+Alt+O是一样的，就是把不用的声明移除掉。
+
+Exclude from Import and Completion：这个就是你自定义import，一般用不上，可以不用看。
+
+> C/C++:
+
+* □ Show import popup for 这个是指当你输入的类的声明没被导入时，会弹出一个选择的对话框，然后你就可以选择对应的导入。
+
+* □ Auto import in completion 自动导入。
+
+> Dart:
+
+* □ Update imports on paste ________ 这个其实就是你在复制代码的时候，对于导入的包是否需要进行询问的一个选项。,这里有几个候选项：
+
+```
+All:  有需要导入的包名时，会自动导入，不会弹提示框。
+Ask:  有需要导入的包名时，会弹提示框，问你要不要导入。
+None: 有需要导入的包名时，不会弹提示框，也不会自动导入。
+```
+
+> 具体如下图所示：
+
+![](../pic/自动导包设置.PNG)
+
 
 ##### 2.显示行号
 
