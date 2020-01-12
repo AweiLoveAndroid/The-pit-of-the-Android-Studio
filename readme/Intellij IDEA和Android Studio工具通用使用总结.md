@@ -14,7 +14,7 @@
 
 #### :fire: [各种实用的插件全面总结](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6.md)
 
-#### :point_right:  [Android所有的Suooprt支持库详解](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/readme/Android%20Support%E6%94%AF%E6%8C%81%E5%BA%93%E8%AF%A6%E8%A7%A3.md)
+#### :point_right:  [Android所有的Support支持库详解](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/readme/Android%20Support%E6%94%AF%E6%8C%81%E5%BA%93%E8%AF%A6%E8%A7%A3.md)
 
 #### :point_right:  [Android Annotations Library 安卓注解库的使用](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%E6%B3%A8%E8%A7%A3%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 
