@@ -1,4 +1,4 @@
-### 十、Intellij IDEA版本对照表
+### Intellij IDEA版本对照表
 
 **无论是Intellij IDEA  Ultimate 专业版，还是Community 社区版，同一个版本的IDEA，它们均使用相同的第三方开源库版本号。具体的可以查看官方链接：[https://www.jetbrains.com/idea/download/other.html](https://www.jetbrains.com/idea/download/other.html)**
 
