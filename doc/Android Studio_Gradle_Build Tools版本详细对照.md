@@ -63,7 +63,6 @@
 | Android Studio 1.0.1 |Gradle 2.2.1-2.3.x | Build Tools 21.1.1+||
 | Android Studio 1.0.0 |Gradle 2.2.1-2.3.x | Build Tools 21.1.1+||
 
-
 ----
 
 ### 二、NDK开发 ----  CMake的版本号
@@ -445,7 +444,7 @@ dependencies {
 
 -----
 
-### 七、AndroidX介绍和迁移指南（support包在28.0.0版本之后使用AndroidX）
+### 九、AndroidX介绍和迁移指南（support包在28.0.0版本之后使用AndroidX）
 
 这里内容有限，不方便展示太多，具体的每一个细节的内容介绍，可以看我的博客，有详细讲解：**[AndroidX库和一般库的详细对比以及迁移中遇到的坑总结](https://www.jianshu.com/p/391d8547ab8b)**
 
@@ -474,3 +473,27 @@ dependencies {
 * **AndroidX和旧的依赖库对照表：** [https://developer.android.google.cn/jetpack/androidx/migrate](https://developer.android.google.cn/jetpack/androidx/migrate)
 
 * **AndroidX各个库的版本号：**  [https://developer.android.google.cn/jetpack/androidx/versions](https://developer.android.google.cn/jetpack/androidx/versions)
+
+----
+
+### 十、Intellij IDEA版本对照表
+
+**无论是Intellij IDEA  Ultimate 专业版，还是Community 社区版，同一个版本的IDEA，它们均使用相同的第三方开源库版本号。具体的可以查看官方链接：[https://www.jetbrains.com/idea/download/other.html](https://www.jetbrains.com/idea/download/other.html)**
+
+
+
+| Intellij IDEA  Ultimate 专业版（或Community 社区版） | Gradle 版本  | Groovy版本|
+| -------------------------------- | ------------ | ------------ |
+|2020.2|6.5|2.5.11|
+|2020.1.4|6.1.1|2.4.17|
+|2020.1.3|6.1.1|2.4.17|
+|2020.1.2|6.1.1|2.4.17|
+|2020.1.1|6.1|2.4.17|
+|2020.1|6.1|2.4.17|
+|2019.3.5|5.2.1-sp1|2.4.17|
+|2019.3.4|5.2.1-sp1|2.4.17|
+|2019.2.4|5.2.1|2.4.6|
+|2019.2.3（我现在下载的是这个版本）|5.2.1|2.4.6|
+|2019.1.4|4.10.3|2.4.6|
+|2018.3.6|4.10|2.4.6|
+|2018.2.8|官方没给出版本号|官方没给出版本号|

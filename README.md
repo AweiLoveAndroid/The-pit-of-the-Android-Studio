@@ -3,9 +3,9 @@
 
 ### 以下是本文档的主要内容：
 
-### :fire: :one: [Android Studio版本号、Gradle版本、Build Tools 三者的对照关系表（必看，很多人因此入坑！！！）](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/doc/Android%20Studio_Gradle_Build%20Tools%E7%89%88%E6%9C%AC%E8%AF%A6%E7%BB%86%E5%AF%B9%E7%85%A7.md)
+### :fire: :one: [Android Studio版本号、Gradle版本、Build Tools 三者的对照关系表（必看，很多人因此入坑！！！）; Cmake版本对照表; Kotlin有关的Gradle插件版本对照表; Support包版本对照表; AndroidX版本对照表; Intellij IDEA版本对照表](doc/Android%20Studio_Gradle_Build%20Tools%E7%89%88%E6%9C%AC%E8%AF%A6%E7%BB%86%E5%AF%B9%E7%85%A7.md)
 
-### :fire::+1: :two: [Intellij IDEA填坑指南，以及从Android Studio到Intellij IDEA相互迁移指南使用总结](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/blob/master/readme/Intellij%20IDEA%E5%92%8CAndroid%20Studio%E5%B7%A5%E5%85%B7%E9%80%9A%E7%94%A8%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93.md)
+### :fire::+1: :two: [Intellij IDEA填坑指南，以及从Android Studio到Intellij IDEA相互迁移指南使用总结](readme/Intellij%20IDEA%E5%92%8CAndroid%20Studio%E5%B7%A5%E5%85%B7%E9%80%9A%E7%94%A8%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93.md)
 
 ### :fire::+1: :three: [Android Studio2.X遇到的那些坑](https://github.com/AweiLoveAndroid/The-pit-of-the-Android-Studio/tree/master/readme/Android%20Studio%E9%81%87%E5%88%B0%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9D%91.md)
 
