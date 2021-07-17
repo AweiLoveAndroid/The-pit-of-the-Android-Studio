@@ -34,4 +34,5 @@ Flutter插件版本|Dart插件版本|IDEA Ultimate Edition版本
 
 由于IDEA的版本太多，这里就不逐个复制粘贴了，具体请看下图：
 
-![](../pic/Flutter，Dart插件和IntelliJ IDEA版本对照表.png)
+![](../pic/Flutter，Dart插件和IntelliJ IDEA版本对照表.png?raw=true)
+
