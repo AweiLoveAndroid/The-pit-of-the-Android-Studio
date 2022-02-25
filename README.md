@@ -5,7 +5,7 @@
 
 ### :fire: :one: Android Studio版本号、Gradle版本、Build Tools 三者的对照关系表; Cmake版本对照表; Kotlin有关的Gradle插件版本对照表; Support包版本对照表; AndroidX和Support库版本对照表; Intellij IDEA版本对照表
 
-##### :fire: :one: [Android Studio版本号、Gradle版本、Build Tools 三者的对照关系表（必看，很多人因此入坑！！！）](doc/Android%20Studio_Gradle_Build%20Tools%E7%89%88%E6%9C%AC%E8%AF%A6%E7%BB%86%E5%AF%B9%E7%85%A7.md)
+##### :fire: :one: [Android Studio版本号、Gradle版本、Build Tools 三者的对照关系表（必看，很多人因此入坑！！！）](doc/Android%20Studio_Gradle_Build%20Tools%E7%89%88%E6%9C%AC%E8%AF%A6%E7%BB%86%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7.md)
 ##### :fire: :one: [Cmake版本对照表(包括Android Studio版本、Gradle版本、Build Tools版本和Cmake版本相互对应关系)](doc/Cmake%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7%E8%A1%A8.md)
 ##### :fire: :one: [Kotlin有关的Gradle插件版本对照表（有3个非常关键的表）](doc/Kotlin%E6%9C%89%E5%85%B3%E7%9A%84Gradle%E6%8F%92%E4%BB%B6%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7%E8%A1%A8.md)
 ##### :fire::one: [Support包版本对照表](doc/Support%E5%8C%85%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7%E8%A1%A8.md)
