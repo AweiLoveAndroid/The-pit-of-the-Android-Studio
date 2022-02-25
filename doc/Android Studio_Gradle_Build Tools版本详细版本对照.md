@@ -6,6 +6,9 @@
 > [https://developer.android.google.cn/studio/releases/](https://developer.android.google.cn/studio/releases/)
 
 ```
+	Chipmunk——2021.2.1（所需插件版本：3.2 或更高版本）
+	Bumblebee——2021.1.1（所需插件版本：3.2 或更高版本）
+	Arctic Fox——2020.3.1（所需插件版本：3.1 或更高版本）
 	Android Studio 3.5.0 (2019年8月)
 	Android Studio 3.4.2 (2019年7月)
 	Android Studio 3.4.1 (2019年5月)
@@ -44,6 +47,8 @@
 > [https://developer.android.google.cn/studio/releases/build-tools](https://developer.android.google.cn/studio/releases/build-tools)
 
 ```
+	Build Tools 30.0.0 rc4（2020年5月）
+	Build Tools 29.0.3 （2020年1月）
 	Build Tools 29.0.2 （2019年8月）
 	Build Tools 29.0.0 （2019年6月）
 	Build Tools 28.0.3 （2018年9月）
@@ -90,19 +95,26 @@
 **官网的原版图是这样的：（原网址：[https://developer.android.google.cn/studio/releases/gradle-plugin](https://developer.android.google.cn/studio/releases/gradle-plugin)）**
 
 | Plugin版本( Android Studio 版本) | Gradle 版本|
-|----|----|
-| 3.5.0| 5.4.1+|
-| 3.4.0-3.4.1|5.1.1+|
-| 3.3.0 - 3.3.2| 4.10.1+|
-| 3.2.0 - 3.2.1| 4.6+|
-| 3.1.0+| 4.4+|
-| 3.0.0+| 4.1+|
-| 2.3.0+| 3.3+|
-| 2.1.3 - 2.2.3| 2.14.1+|
-| 2.0.0 - 2.1.2| 2.10 - 2.13|
-| 1.5.0| 2.2.1 - 2.13 |
-| 1.2.0 - 1.3.1| 2.2.1 - 2.9|
-| 1.0.0 - 1.1.3| 2.2.1 - 2.3|
+| -------------------------------- | ------------ |
+| 7.2 | 7.3+ |
+| 7.1 | 7.2+ |
+| 7.0 | 7.0+ |
+| 4.2.0+ | 6.7.1+ |
+| 4.1.0+ | 6.5+ |
+| 4.0.0+ | 6.1.1+ |
+| 3.6.0 - 3.6.4 | 5.6.4+|
+| 3.5.0 - 3.5.4 | 5.4.1+ |
+| 3.4.0 - 3.4.3 | 5.1.1+ |
+| 3.3.0 - 3.3.3 | 4.10.1+ |
+| 3.2.0 - 3.2.1 | 4.6+ |
+| 3.1.0+ | 4.4+ |
+| 3.0.0+ | 4.1+ |
+| 2.3.0+ | 3.3+ |
+| 2.1.3 - 2.2.3 | 2.14.1 - 3.5 |
+| 2.0.0 - 2.1.2 | 2.10 - 2.13 |
+| 1.5.0 | 2.2.1 - 2.13 |
+| 1.2.0 - 1.3.1 | 2.2.1 - 2.9 |
+| 1.0.0 - 1.1.3 | 2.2.1 - 2.3 |
 
 
 
